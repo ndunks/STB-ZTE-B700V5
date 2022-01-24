@@ -1,0 +1,2288 @@
+preloader_v.13184
+CFG = 0x1  : 0
+[0x00030000] [0x703fc000]
+
+SSC (+-5/1000, 30kHz)
+
+DDR3,data rate: 1242 MHz.
+DAT:( 6~ 8), 3, 7
+B0:DQS(15~52), 38, 33
+B1:DQS(11~47), 37, 29
+0x7388=0x2e2e2e2e.
+B0:Gw( 1~90), 90, 43
+B1:Gw( 1~78), 78, 37
+0x7388=0x252b.
+A 256MB, x16
+DAT:( 6~ 8), 3, 7
+B0:DQS(12~47), 36, 29
+B1:DQS( 9~44), 36, 26
+0x7388=0x2e2e2e2e.
+B0:Gw( 1~90), 90, 42
+B1:Gw( 1~78), 78, 37
+0x7388=0x252a.
+B 256MB, x16
+
+L2
+VFP
+LDI
+new RSA
+--zte new pit --
+FFLG
+NB
+TZ
+
+
+U-Boot-2009.08-svn1653 (Feb 19 2014 - 14:49:32)
+
+Board: B700V5S1 MT8653 [DDR 512M] [FLASH 256M] [INTL] Ver:0x03
+NXP B.V. - MT85XX SoC with ARM1176JZF-S
+DRAM:  512 MB
+NAND:  Nand ID: 01 da 90 95
+256 MiB
+*** Warning - bad CRC or NAND, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+r_args_to_uboot:
+	head sig	: 0xa0b0ead1
+	version	: 1
+	boot type	: 0
+	dram ch1	: 0x10000000
+	dram ch2	: 0x10000000
+	kern addr	: 0x00000000
+	initrd addr	: 0x00000000
+	initrd size	: 0x00000000
+enable bim two way write.
+[111]boot type:[0]
+n>)ü¹ÜëBüÈMT@#I
+Hit any key to stop autoboot:  0 
+load logo image at 1f000000 in uboot
+------------------------------
+	Partition Name: norm
+	Partition Size: 0x0023d6b0
+	Load address:   0xffffffff
+	Entry point:    0xffffffff
+	Version:        V72760143.0006 2015-10-27
+	CRC:            0x386d0000
+	Reserver1:      0x00000000
+	Reserver2:      0x00000000
+------------------------------
+## Booting kernel from Legacy Image at 039fffc0 ...
+   Image Name:   
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    2348656 Bytes =  2.2 MB
+   Load Address: 03a00000
+   Entry Point:  03a00000
+   Loading Kernel Image ... OK
+OK
+
+Starting_kernel...
+
+zte: boot_time=1379 ms
+Uncompressing_Linux... done, booting the kernel.
+Serial: MT85XX driver $Revision: #25 $
+Serial : add uart port 0,UART_NR=1
+Serial: driver_register 0
+3c
+da
+2a
+d5
+5e
+25
+runlevel=0
+system=norm
+=rcS Start=
+system=norm
+date: can't set date: Invalid argument
+Thu Jan  1 00:00:00 GMT-7 1970
+UBI device number 0, total 160 LEBs (20316160 bytes, 19.4 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubiattach mtd11 success
+/dev/ubi0 MTD_NUM is [11]
+Found ubi0 for mtd11.
+Trying to mount ubifs.
+UBI device number 1, total 552 LEBs (70090752 bytes, 66.8 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubiattach mtd12 success
+/dev/ubi0 MTD_NUM is [11]
+/dev/ubi1 MTD_NUM is [12]
+Found ubi1 for mtd12.
+Trying to mount ubifs.
+call bdpprog 
+bdpprog result:0
+Start run zte program......
+ln: /usr/local/directfb: Read-only file system
+Wait Semaphore : Before sem_wait, tPlatformInit = 0x40021000
+[FastBoot]BDPProg_Start...
+
+MTK SDK Version: 00014090
+[NOTIFY] send_notification:0x3f3
+[SYSTEM] init_sys_thread_main !
+[NOTIFY] send_notification:0x3ff
+pt_thread_descr is NULL
+_fgUserEnableInput = 1
+Has pass word protect
+cli init ok!
+[CBA] init, pid:609
+[RC_U] rc_user_init() OK.
+system.c :rc_user_init ok!!
+IOCTL_CHIP_CAP_GET_AUDIO_CAPABILITY Fail !!! 
+audio_cap = 0 
+wa_init fail!!
+[DRV_INIT_PROG] driver_notify, argc:2
+[DRV_INIT_PROG] vDriverInit, level:2048
+{GRAPHIC} ERR: GLR_NOT_INIT (-12) at L474
+
+[FastBoot]MW_INIT_Start...
+MW init Phase 1 vMwInitDefCfg time elapsed: 57000 (us)
+MW init Phase 1 fm_init time elapsed: 35000 (us)
+MW init Phase 1 iom_init time elapsed: 0 (us)
+MW init Phase 1 fe_init time elapsed: 48000 (us)
+{GRAPHIC} gl_plane_init begin 
+[PLAT_CFG]<get_config_from_file>SDK_CONFIG_CLI_ENABLE = 0
+CLI is disabled, get input by IPC mode 
+[CLI_IPC_RECV] cli init_msg_queue successful, i4_return : 0 
+Cannot get the attribution of the terminalSet input mode error
+Command>MW init Phase 1 gl_init time elapsed: 59000 (us)
+MW init Phase 1 sm_init time elapsed: 44000 (us)
+MW init Phase 1 aee_init time elapsed: 19000 (us)
+MW init Phase 1 scom_init time elapsed: 25000 (us)
+MW init Phase 1 i4MwInitScc time elapsed: 7000 (us)
+MW init Phase 1 x_img_png_init time elapsed: 16000 (us)
+{IMG} BMP thread create sucess. (0)
+x_img_bmp_init ----done 
+MW init Phase 1 x_img_bmp_init time elapsed: 1000 (us)
+{IMG}Enter img_drv_decode_thread_main
+{IMG} img_drv_decode_thread_main, Create decoder IMG thread for PNG
+ {img} x_img_mng_init ----done 
+MW init Phase 1 vInitWidgets time elapsed: 1000 (us)
+[SM] set dvb plane:0 
+
+[SM]Sbtl ui1_max_service_cnt:1 
+
+ x_sm_sbtl_hdlr_init ok i4_ret = 0
+MW init Phase 1 init_dvb_subtitle time elapsed: 37000 (us)
+mw init phase 1 done
+MW init Phase 1 time elapsed: 349000 (us)
+MMW init Phase 1 time elapsed: 41000 (us)
+[FastBoot]APP_INIT_Start...
+[custom_application_notify ] : NOTIFICATION_INIT>>> argc:0x2  args->i4_level:0x800
+[FAST_BOOT] NOTIFY_MENU_LEVEL
+[EXTRES] _app_get_file_size fail: src/application/app_start/a_app_start.c, 1082, [file name] is/res/image_palette_4444.bin
+[EXTRES] _app_get_file_size fail: src/application/app_start/a_app_start.c, 1082, [file name] is/res/image_palette_1555.bin
+[EXTRES] _app_get_file_size fail: src/application/app_start/a_app_start.c, 1082, [file name] is/res/alpha.bin
+<8 index alpha>open dir error
+[FAST_BOOT] c_init_external_resource
+[FAST_BOOT] init_fonts
+[application_notify] NOTIFICATION_INIT level:0x800
+[APP_init]application_init
+a_testcli_init
+[factory_test_get_bar_code]ERR get partition id error -1
+[APP init] NOTIFICATION_INIT's level:0x800
+<AM>[_am_app_init_fct] Rest power atatus xhb 
+ <ACFG> acfg_flash_init
+<ACFG> c_fm_read fail:src/application/app_util/config/acfg_flash.c:362:-13
+<ACFG> c_fm_read fail:src/application/app_util/config/acfg_flash.c:373:-13
+<ACFG>acfg_flash_store start
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_flash.c:689:-1
+<ACFG> Validate done
+<acfg> Start group tv 
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<acfg>resolution update: ui1_resolution is 0
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+[PLAYBACK] b_hdmi_connected is 0, ui1_resolution is 0
+[PLAYBACK]a_pb_cav_output_should_down_sample return TRUE line 675
+<ACFG>Get handle by name fail!,at L11978
+<ACFG_GRP_TV> c_app_send_msg(MSG_FROM_ACFG_FOR_HD)
+<AM> _am_system_key_event:b_power_on = 0
+<AM> Toggle :b_power_on = 1
+[AM]>>>>>>> Powe on now <<<<<<<<< 
+scanning for devices in /dev/input/
+
+	trying uinput
+	trying mice
+Cannot find event device. Are you sure the event device is enabled?
+{IOM_ADAPTER}i4_MTK_KB_Init fail
+<IMTKAPP_APP_IPC> Calling -------> init_imtkapp_app_ipc
+<IMTKAPP_IPC> Calling -------> IMtkApp_Ipc_Init_Msg_Queue
+<IMTKAPP_IPC>Create IMtkApp app message queue.!
+<IMTKAPP_IPC> Calling -------> IMtkApp_New_Msg_Que
+<IMTKAPP_IPC>IMtkApp_New_Msg_Que successed!
+<IMTKAPP_IPC>Create IMtkApp stub message queue.!
+<IMTKAPP_IPC> Calling -------> IMtkApp_New_Msg_Que
+<IMTKAPP_IPC>IMtkApp_New_Msg_Que successed!
+<IMTKAPP_APP_IPC> Calling -------> _imtkapp_app_ipc_listen_thread_main
+<IMTKAPP_APP_IPC>Create imtkapp_app_ipc thread OK @L1605
+<IMTKAPP_APP> Calling -------> imtkapp_app_enable_power_key, bEnable = 0
+<AM>[a_am_get_quick_start_stby_mode]:quick_start_status=0 
+[NOTIFY] send_notification:0x3ff
+[DRV_INIT_PROG] driver_notify, argc:2
+[DRV_INIT_PROG] vDriverInit, level:1
+[DRV_INIT_PROG] Menu level, to insert bdpdrv
+<AUDIO>standby mode=0
+[DRV_INIT_PROG] insert_kernel_module bFileName :/lib/modules/2.6.35/BDP/bdpdrv.ko.
+[DRV_INIT_PROG] Menu level, to insert jdec.ko
+[DRV_INIT_PROG] insert_kernel_module bFileName :/lib/modules/2.6.35/BDP/jdec.ko.
+[DRV_INIT_PROG] Menu level, to insert png.ko
+[DRV_INIT_PROG] insert_kernel_module bFileName :/lib/modules/2.6.35/BDP/png.ko.
+[FastBoot]MW_INIT_Start...
+libmtp version: 1.1.6
+
+Listing raw device(s)
+[PLAT_CFG]<get_config_from_file>SDK_CONFIG_AUTO_MOUNT = 0
+dmh_init_netlink_services skipped
+[DLL_UTIL] semaphore create. i = 0
+[DLL_UTIL] semaphore create successed. handle = 0xb0b868
+[DLL_UTIL] semaphore create. i = 1
+[DLL_UTIL] semaphore create successed. handle = 0xb0b8d0
+[DLL_UTIL] semaphore create. i = 2
+[DLL_UTIL] semaphore create successed. handle = 0xb0b938
+[DLL_UTIL] semaphore create. i = 3
+[DLL_UTIL] semaphore create successed. handle = 0xb0b9a0
+[DLL_UTIL] semaphore create. i = 4
+[DLL_UTIL] semaphore create successed. handle = 0xb0ba08
+[DLL_UTIL] semaphore create. i = 5
+[DLL_UTIL] semaphore create successed. handle = 0xb0ba70
+[AREC]vArecInit begin
+[AREC]:	_fgArecInstList[0] =0.
+[AORG]:	 vAorgInit begin .
+[AORG]:	 vAorgInit out .
+[AREC]vArecInit end
+[MTPFM] x_fm_mtp_init: #644: return 0
+{CM} x_hbidec_reg_handler().
+{CM} cm_reg_handler()t_hbidec_handler.h_handler = 0x166e8.
+{CECM} open cec drv1 handle:81540000
+[PLAT_CFG]<get_config_from_file>SDK_CONFIG_AUTO_MOUNT = 0
+{IMG}Enter img_gif_drv_decode_thread_main
+{IMG} img_gif_drv_decode_thread_main, Create decoder IMG thread for PNG 
+{IMG}Enter img_drv_jdec_hw_thread_main
+{IMG} img_drv_jdec_hw_thread_main, Create decoder IMG thread for JDEC
+ {IMG}Enter img_drv_jdec_sw_thread_main
+{IMG} img_drv_jdec_sw_thread_main, Create decoder IMG thread for JDEC
+ Enter MW init Phase 2 closedcaption
+Leave MW init Phase 2 closedcaption
+scomtest_cli_initarec_cli_initno part head sig found -1
+[i4SearchAdptPIT] SUCCESS.
+[NAND] get part item by name error
+[i4NFBPartitionRead]u4DevId = 0, u8Offset = 0x0, u4MemPtr = 0xb35f70, u4MemLen = 0x400 
+[NAND] ECC failed: 0
+[NAND] ECC corrected: 0
+[NAND] Number of bad blocks: 0
+[NAND] Number of bbt blocks: 0
+
+ wifi_cli_init().
+{mw_notify}i4Notify_init done  
+handle_reg_cli init
+handle_reg_cli called
+b_init
+cli supported
+handle_reg_cli success return
+mw init phase 2 done
+vPbCliEntry!
+mpc pre cli init OK
+tcm test cli init OK[MTKPBCTRL] mtkpbctrltest_cli_init
+c_rpc_init_mtkpbctrl_server is called
+c_rpc_server_init is called
+rpc_init is called
+_init_hash(), ui4_tbl_len_order=10, ui4_num=1024
+ipc_init is called, L2813
+ipc_init is called, L2816
+getline,ps_line=/usr/local/bin/bdpprog, read_size=23, z_len=120
+ipc_init is called, L2834
+ipc_init is called, L2839
+ipc_init is called, L2881
+ipc_init is called, pv_key_sess=0xb48d80, L2891
+ipc_init is called, L2900
+ipc_init is called, L2908
+pt_free = &pt_sess_tbl[1]
+ipc_init is called, L2914
+RPC Inited
+<Server> mtkpbctrl_ipc_cli_attach_cmd_tbl--------------> is Called @Line: 9874!
+<Server> c_rpc_reg_mtkpbctrl_op_hndlrs ---> is called @Line: 9332!
+REG OP HNDLR x_MtkPb_Ctrl_Reg_CLI, 0x0x5bb909
+REG OP HNDLR x_MtkPb_Ctrl_Open, 0x0x5c1e65
+REG OP HNDLR x_MtkPb_Ctrl_Close, 0x0x5c1c75
+REG OP HNDLR x_MtkPb_Ctrl_RegCallback, 0x0x5c1ae5
+REG OP HNDLR x_MtkPb_Ctrl_SetEngineParam, 0x0x5c1651
+REG OP HNDLR x_MtkPb_Ctrl_SetEngineParamAsync, 0x0x5c1489
+REG OP HNDLR x_MtkPb_Ctrl_SetMediaInfo, 0x0x5c13ad
+REG OP HNDLR x_MtkPb_Ctrl_SetExtraInfo, 0x0x5c12b1
+REG OP HNDLR x_MtkPb_Ctrl_SetAudTrack, 0x0x5c11b5
+REG OP HNDLR x_MtkPb_Ctrl_SetDisplayRectangle, 0x0x5c1079
+REG OP HNDLR x_MtkPb_Ctrl_CancelGetBufferPending, 0x0x5c0f81
+REG OP HNDLR x_MtkPb_Ctrl_SendData, 0x0x5c0e51
+REG OP HNDLR x_MtkPb_Ctrl_SendCmd, 0x0x5c0d55
+REG OP HNDLR x_MtkPb_Ctrl_ReleaseBuffer, 0x0x5bb869
+REG OP HNDLR x_MtkPb_Ctrl_SetPushModelEOS, 0x0x5c0c5d
+REG OP HNDLR x_MtkPb_Ctrl_GenerateP0Header, 0x0x5c0b4d
+REG OP HNDLR x_MtkPb_Ctrl_GenerateRVPicHdr, 0x0x5c0a3d
+REG OP HNDLR x_MtkPb_Ctrl_PreLoadData, 0x0x5bb86d
+REG OP HNDLR x_MtkPb_Ctrl_Play, 0x0x5c0945
+REG OP HNDLR x_MtkPb_Ctrl_PlayEx, 0x0x5c0849
+REG OP HNDLR x_MtkPb_Ctrl_Pause, 0x0x5c0751
+REG OP HNDLR x_MtkPb_Ctrl_PauseEx, 0x0x5c0655
+REG OP HNDLR x_MtkPb_Ctrl_Stop, 0x0x5c055d
+REG OP HNDLR x_MtkPb_Ctrl_Step, 0x0x5c0461
+REG OP HNDLR x_MtkPb_Ctrl_TimeSeek, 0x0x5c0351
+REG OP HNDLR x_MtkPb_Ctrl_TimeSeekEx, 0x0x5c0255
+REG OP HNDLR x_MtkPb_Ctrl_ChangeAudio, 0x0x5c0159
+REG OP HNDLR x_MtkPb_Ctrl_ChangeVideo, 0x0x5c0061
+REG OP HNDLR x_MtkPb_Ctrl_SetSpeed, 0x0x5bff69
+REG OP HNDLR x_MtkPb_Ctrl_SetPlayMode, 0x0x5bfe6d
+REG OP HNDLR x_MtkPb_Ctrl_GetMediaInfo, 0x0x5bfd69
+REG OP HNDLR x_MtkPb_Ctrl_GetBufferFullness, 0x0x5bfc65
+REG OP HNDLR x_MtkPb_Ctrl_GetBufferStatus, 0x0x5bfb61
+REG OP HNDLR x_MtkPb_Ctrl_GetPlayParam, 0x0x5bfa5d
+REG OP HNDLR x_MtkPb_Ctrl_GetAudTrackInfo, 0x0x5bf955
+REG OP HNDLR x_MtkPb_Ctrl_GetCurAudTrackInfo, 0x0x5bf851
+REG OP HNDLR x_MtkPb_Ctrl_GetAudTrackInfoEx, 0x0x5bf7d9
+REG OP HNDLR x_MtkPb_Ctrl_GetCurAudTrackInfoEx, 0x0x5bf6d5
+REG OP HNDLR x_MtkPb_Ctrl_GetVidTrackInfo, 0x0x5bf5d1
+REG OP HNDLR x_MtkPb_Ctrl_Get, 0x0x5bc0dd
+REG OP HNDLR x_MtkPb_Ctrl_GetVidTrackInfoEx, 0x0x5bf4cd
+REG OP HNDLR x_MtkPb_Ctrl_GetCurrentPos, 0x0x5bf3b5
+REG OP HNDLR x_MtkPb_Ctrl_GetCurrentPTS, 0x0x5bf29d
+REG OP HNDLR x_MtkPb_Ctrl_GetState, 0x0x5bf179
+REG OP HNDLR x_MtkPb_Ctrl_HttpsAuthenticateClient, 0x0x5bf059
+REG OP HNDLR x_MtkPb_Ctrl_HttpsAuthenticateServer, 0x0x5bef39
+REG OP HNDLR x_MtkPb_Ctrl_Ext_EncPb, 0x0x5beea9
+REG OP HNDLR x_MtkPb_Ctrl_Ext_SetEncBufferParm, 0x0x5bede5
+REG OP HNDLR x_MtkPb_Ctrl_Ext_EncEnable, 0x0x5bed79
+REG OP HNDLR x_MtkPb_Ctrl_Ext_RequestKeyframe, 0x0x5bc089
+REG OP HNDLR x_MtkPb_Ctrl_Ext_FreeEncCbBuffer, 0x0x5bc031
+REG OP HNDLR x_MtkPb_Ctrl_Ext_SetVidFrameRate, 0x0x5bbfdd
+REG OP HNDLR x_MtkPb_Ctrl_Ext_SetVidResolution, 0x0x5bbf85
+REG OP HNDLR x_MtkPb_Ctrl_Ext_SetVidBitRate, 0x0x5bbf31
+REG OP HNDLR x_MtkPb_Ctrl_ClearVideo, 0x0x5bec81
+REG OP HNDLR x_IMtkPb_Ctrl_Ext_Ipc_StartSnapshot, 0x0x5beb7d
+REG OP HNDLR x_IMtkPb_Ctrl_Ext_Ipc_StopSnapshot, 0x0x5bea81
+REG OP HNDLR x_IMtkPb_Ctrl_Ext_Ipc_StartSnapshot_Ext, 0x0x5bea01
+REG OP HNDLR x_IMtkPb_Ctrl_Ext_Ipc_StopSnapshot_Ext, 0x0x5be98d
+REG OP HNDLR x_IMtkPb_Ctrl_CustomizeHttpReqHdr, 0x0x5be891
+REG OP HNDLR x_MtkPb_Ctrl_Pull_Nfy_Fct, 0x0x5be775
+REG OP HNDLR x_MtkPb_Ctrl_Ipc_Get_Mem_Slice_Info, 0x0x5be65d
+REG OP HNDLR x_MtkPb_Ctrl_Ipc_Get_Mem_Slice_Handle, 0x0x5be4e1
+REG OP HNDLR x_MtkPb_Ctrl_Ipc_RegSendDataNfyCallback, 0x0x5be2a1
+REG OP HNDLR x_MtkPb_Ctrl_SetAudioFifoSize, 0x0x5be1a9
+REG OP HNDLR x_MtkPb_Ctrl_GetMaxAudioFifoSize, 0x0x5be089
+REG OP HNDLR x_MtkPb_Ctrl_SetVideoFifoSize, 0x0x5bdf8d
+REG OP HNDLR x_MtkPb_Ctrl_GetMaxVideoFifoSize, 0x0x5bde69
+REG OP HNDLR x_MtkPb_Ctrl_GetBufferRemainingDataLen, 0x0x5bbf09
+REG OP HNDLR x_MtkPb_Ctrl_TS_Filter_Alloc, 0x0x5bdd05
+REG OP HNDLR x_MtkPb_Ctrl_TS_Filter_Start, 0x0x5bdc09
+REG OP HNDLR x_MtkPb_Ctrl_TS_Filter_Stop, 0x0x5bdb11
+REG OP HNDLR x_MtkPb_Ctrl_TS_Filter_Free, 0x0x5bda15
+REG OP HNDLR x_MtkPb_Ctrl_TS_Filter_FreeBuffer, 0x0x5bd91d
+REG OP HNDLR x_MtkPb_Ctrl_TS_Filter_Modify, 0x0x5bd81d
+REG OP HNDLR x_MtkPb_Ctrl_StartTSPreparse, 0x0x5bd721
+REG OP HNDLR x_MtkPb_Ctrl_StopTSPreparse, 0x0x5bd629
+REG OP HNDLR x_MtkPb_Ctrl_SetTSMediaInfo, 0x0x5bd52d
+REG OP HNDLR x_MtkPb_Ctrl_SetBufNfyThrd, 0x0x5bd431
+REG OP HNDLR x_MtkPb_Ctrl_TSPlay, 0x0x5bd339
+REG OP HNDLR x_MtkPb_Ctrl_TSStop, 0x0x5bd241
+REG OP HNDLR x_MtkPb_Ctrl_SetHttpProxy, 0x0x5bd145
+REG OP HNDLR x_MtkPb_Ctrl_SetFeatureParam, 0x0x5bd049
+REG OP HNDLR x_MtkPb_Ctrl_SendFeatureCmd, 0x0x5bbeb5
+REG OP HNDLR x_MtkPb_Ctrl_GetFeatureInfo, 0x0x5bcf45
+REG OP HNDLR x_MtkPb_Ctrl_SetPlayModeEx, 0x0x5bced1
+REG OP HNDLR x_MtkPb_Ctrl_GetBufferEx, 0x0x5bcd6d
+REG OP HNDLR x_MtkPb_Ctrl_SendDataEx, 0x0x5bcc59
+REG OP HNDLR x_MtkPb_Ctrl_SpDataRelease, 0x0x5bcb5d
+REG OP HNDLR x_MtkPb_Ctrl_RegSpCallback, 0x0x5bc9a1
+REG OP HNDLR x_MtkPb_Ctrl_GetSpInfo, 0x0x5bc89d
+REG OP HNDLR x_MtkPb_Ctrl_GetSpTrackInfo, 0x0x5bc795
+REG OP HNDLR x_MtkPb_Ctrl_GetCurSpTrackInfo, 0x0x5bc691
+REG OP HNDLR x_MtkPb_Ctrl_SetSpTrack, 0x0x5bc591
+REG OP HNDLR x_MtkPb_Ctrl_SetSubtitleShowHide, 0x0x5bbe55
+REG OP HNDLR x_MtkPb_Ctrl_SetSubtitleTrack, 0x0x5bbdf9
+REG OP HNDLR x_MtkPb_Ctrl_GetSubTrackInfo, 0x0x5bbd9d
+REG OP HNDLR x_MtkPb_Ctrl_SetSubtitleInfo, 0x0x5bbd49
+REG OP HNDLR x_MtkPb_Ctrl_ChangeSubtitle, 0x0x5bbcf5
+REG OP HNDLR x_MtkPb_Ctrl_SetSubtitlePlane, 0x0x5bbca1
+REG OP HNDLR x_MtkPb_Ctrl_SetSubtitleAttr, 0x0x5bbc4d
+REG OP HNDLR x_MtkPb_Ctrl_GetAvInInfo, 0x0x5bc48d
+REG OP HNDLR x_MtkPb_CAAR_Get_LogLevel, 0x0x5bc3fd
+rpcu_tl_log_start is called
+rpcu_tl_log_is_on is called
+c_rpc_start_server is called
+Open Server:mtkpbctrl -logfunction -loglevel
+<LOG /usr/local/bin/bdpprog, _alloc_id, #599>New IPC ID (Count 1)
+[MTKPBCTRL] IMtkPb_Ctrl_Init OK, t_init_count[1]
+c_rpc_init_mtkpbsnd_server is called
+c_rpc_server_init is called
+rpc_init is called
+rpc_init is already done
+ipc_init is called, L2813
+ipc_init is called, L2816
+getline,ps_line=/usr/local/bin/bdpprog, read_size=23, z_len=120
+ipc_init is called, L2834
+ipc_init is called, L2839
+ipc_init is called, L2881
+ipc_init is called, pv_key_sess=0xb48d80, L2891
+ipc_init is called, L2900
+ipc_init is called, L2908
+ipc_init is called, L2914
+RPC Inited
+REG OP HNDLR x_MtkPb_Snd_Count, 0x0x5c50d5
+REG OP HNDLR x_MtkPb_Snd_Query_Capability, 0x0x5c4641
+REG OP HNDLR x_MtkPb_Snd_Open, 0x0x5c4f21
+REG OP HNDLR x_MtkPb_Snd_SetParameter, 0x0x5c4ebd
+REG OP HNDLR x_MtkPb_Snd_SetGain, 0x0x5c4e69
+REG OP HNDLR x_MtkPb_Snd_RegCallback, 0x0x5c4d95
+REG OP HNDLR x_MtkPb_Snd_SendClip, 0x0x5c4c29
+REG OP HNDLR x_MtkPb_Snd_SendClipDirect, 0x0x5c4abd
+REG OP HNDLR x_MtkPb_Snd_Play, 0x0x5c4a69
+REG OP HNDLR x_MtkPb_Snd_Play_File, 0x0x5c4a11
+REG OP HNDLR x_MtkPb_Snd_Stop, 0x0x5c49b1
+REG OP HNDLR x_MtkPb_Snd_Pause, 0x0x5c495d
+REG OP HNDLR x_MtkPb_Snd_Resume, 0x0x5c4909
+REG OP HNDLR x_MtkPb_Snd_Close, 0x0x5c4821
+REG OP HNDLR x_MtkPb_Snd_SendEOS, 0x0x5c4785
+REG OP HNDLR x_MtkPb_Snd_GetBufferRemainingDataLen, 0x0x5c4731
+REG OP HNDLR x_MtkPb_Snd_Reg_SendDataNfyCallback, 0x0x5c465d
+rpcu_tl_log_start is already done
+c_rpc_start_snd_server is called
+Open Server:mtkpbsnd
+Initialize common interface sound server done, id=2
+c_rpc_init_mtkpbmisc_server is called
+c_rpc_server_init is called
+rpc_init is called
+rpc_init is already done
+ipc_init is called, L2813
+ipc_init is called, L2816
+getline,ps_line=/usr/local/bin/bdpprog, read_size=23, z_len=120
+ipc_init is called, L2834
+ipc_init is called, L2839
+ipc_init is called, L2881
+ipc_init is called, pv_key_sess=0xb48d80, L2891
+ipc_init is called, L2900
+ipc_init is called, L2908
+ipc_init is called, L2914
+RPC Inited
+REG OP HNDLR x_MtkPb_Misc_Init, 0x0x5c58a1
+REG OP HNDLR x_MtkPb_Misc_Terminate, 0x0x5c5861
+REG OP HNDLR x_MtkPb_Misc_GetAudioVolume, 0x0x5c580d
+REG OP HNDLR x_MtkPb_Misc_SetAudioVolume, 0x0x5c57b9
+REG OP HNDLR x_MtkPb_Misc_GetUserPref, 0x0x5c5611
+rpcu_tl_log_start is already done
+c_rpc_start_misc_server is called
+Open Server:mtkpbmisc
+Initialize common interface misc server done, id=0
+c_rpc_server_init is called
+rpc_init is called
+rpc_init is already done
+ipc_init is called, L2813
+ipc_init is called, L2816
+getline,ps_line=/usr/local/bin/bdpprog, read_size=23, z_len=120
+ipc_init is called, L2834
+ipc_init is called, L2839
+ipc_init is called, L2881
+ipc_init is called, pv_key_sess=0xb48d80, L2891
+ipc_init is called, L2900
+ipc_init is called, L2908
+ipc_init is called, L2914
+RPC Inited
+REG OP HNDLR x_MtkCfg_Open, 0x0x5c6f11
+REG OP HNDLR x_MtkCfg_Close, 0x0x5c6e7d
+REG OP HNDLR x_MtkCfg_Get_Support_Format, 0x0x5c6e67
+REG OP HNDLR x_MtkCfg_Set_User_Format, 0x0x5c6e51
+REG OP HNDLR x_MtkCfg_Get_User_Format, 0x0x5c6e3b
+REG OP HNDLR x_MtkCfg_Get_Output_Format, 0x0x5c6e25
+REG OP HNDLR x_MtkCfg_RegCallback, 0x0x5c6d55
+REG OP HNDLR x_MtkCfg_CEC_RegCallback, 0x0x5c6caf
+REG OP HNDLR x_MtkCfg_GetUserPref, 0x0x5c6c95
+REG OP HNDLR x_MtkCfg_Vid_Set_Cps_Info, 0x0x5c6c7f
+REG OP HNDLR x_MtkCfg_Vid_Get_Cps_Info, 0x0x5c6c69
+REG OP HNDLR x_MtkCfg_Vid_Enable_Video_Output, 0x0x5c6c53
+REG OP HNDLR x_MtkCfg_Vid_Disable_Video_Output, 0x0x5c6c3d
+REG OP HNDLR x_MtkCfg_Vid_Set_Screen_Brightness, 0x0x5c6c27
+REG OP HNDLR x_MtkCfg_Vid_Set_Screen_Contrast, 0x0x5c6c11
+REG OP HNDLR x_MtkCfg_Vid_Set_Screen_Saturation, 0x0x5c6bfb
+REG OP HNDLR x_MtkCfg_Vid_Set_Screen_Transparency, 0x0x5c6be5
+REG OP HNDLR x_MtkCfg_Vid_Set_Screen_BrightnessEx, 0x0x5c6bcd
+REG OP HNDLR x_MtkCfg_Vid_Set_Screen_ContrastEx, 0x0x5c6bb5
+REG OP HNDLR x_MtkCfg_Vid_Set_Screen_SaturationEx, 0x0x5c6b9d
+REG OP HNDLR x_MtkCfg_Vid_Get_Screen_BrightnessEx, 0x0x5c6b85
+REG OP HNDLR x_MtkCfg_Vid_Get_Screen_ContrastEx, 0x0x5c6b6d
+REG OP HNDLR x_MtkCfg_Vid_Get_Screen_SaturationEx, 0x0x5c6b55
+REG OP HNDLR x_MtkCfg_Vid_Set_Aspect_Ratio, 0x0x5c6b3f
+REG OP HNDLR x_MtkCfg_Vid_Get_Aspect_Ratio, 0x0x5c6b29
+REG OP HNDLR x_MtkCfg_Vid_Set_Match_Method, 0x0x5c6b13
+REG OP HNDLR x_MtkCfg_Vid_Get_Match_Method, 0x0x5c6afd
+REG OP HNDLR x_MtkCfg_Vid_Set_Video_Show, 0x0x5c6adf
+REG OP HNDLR x_MtkCfg_Vid_SetResolution, 0x0x5c6ac5
+REG OP HNDLR x_MtkCfg_Vid_GetResolution, 0x0x5c6aad
+REG OP HNDLR x_MtkCfg_Vid_SetScanType, 0x0x5c6a97
+REG OP HNDLR x_MtkCfg_Vid_SetSourceInfo, 0x0x5c6a81
+REG OP HNDLR x_MtkCfg_Vid_SetDiscType, 0x0x5c6a6b
+REG OP HNDLR x_MtkCfg_Vid_SetTTDEnabled, 0x0x5c6a51
+REG OP HNDLR x_MtkCfg_Vid_SetTTDLevel, 0x0x5c6a3b
+REG OP HNDLR x_MtkCfg_Vid_SetTTDWeight, 0x0x5c6a25
+REG OP HNDLR x_MtkCfg_Vid_SetTTDProtrude, 0x0x5c6a0f
+REG OP HNDLR x_MtkCfg_Vid_SetTTDFixdepthshift, 0x0x5c69f9
+REG OP HNDLR x_MtkCfg_Vid_ClearVideo, 0x0x5c69e3
+REG OP HNDLR x_MtkCfg_Vid_SetCvbsEnabled, 0x0x5c69c9
+REG OP HNDLR x_MtkCfg_Vid_SetAspectRatio_Ex, 0x0x5c69b1
+REG OP HNDLR x_MtkCfg_Aud_StreamInfo_Callback, 0x0x5c6951
+REG OP HNDLR x_MtkCfg_Aud_Set_Reencode_Info, 0x0x5c693b
+REG OP HNDLR x_MtkCfg_Aud_Set_Cgms_Permission, 0x0x5c6925
+REG OP HNDLR x_MtkCfg_Aud_Set_Aud_Dec_Apll, 0x0x5c690f
+REG OP HNDLR x_MtkCfg_Aud_SetVolume, 0x0x5c68f3
+REG OP HNDLR x_MtkCfg_Aud_GetVolume, 0x0x5c68d9
+REG OP HNDLR x_MtkCfg_Aud_Set_Kara_Output, 0x0x5c68c3
+REG OP HNDLR x_MtkCfg_Aud_Set_Clip_Dual_Mono, 0x0x5c68ad
+REG OP HNDLR x_MtkCfg_Aud_Set_Spdif_Output_Format, 0x0x5c6897
+REG OP HNDLR x_MtkCfg_Aud_Set_Hdmi_Output_Format, 0x0x5c6881
+REG OP HNDLR x_MtkCfg_Aud_Set_Hdmi_Mode, 0x0x5c686b
+REG OP HNDLR x_MtkCfg_Aud_Set_Device_Mute_Unmute, 0x0x5c684d
+REG OP HNDLR x_MtkCfg_Aud_Set_Global_Mute_Unmute, 0x0x5c6833
+REG OP HNDLR x_MtkCfg_Aud_SetAC3DRC, 0x0x5c681d
+REG OP HNDLR x_MtkCfg_Aud_SetDTSDRC, 0x0x5c6807
+REG OP HNDLR x_MtkCfg_Aud_SetTrueHDDRC, 0x0x5c67f1
+REG OP HNDLR x_MtkCfg_Aud_SetDownsample, 0x0x5c67db
+REG OP HNDLR x_MtkCfg_Aud_SetDownmixMode, 0x0x5c67c5
+REG OP HNDLR x_MtkCfg_Aud_GetDownmixMode, 0x0x5c67af
+REG OP HNDLR x_MtkCfg_Aud_Set_Speaker_2x, 0x0x5c6797
+REG OP HNDLR x_MtkCfg_Aud_Set_Speaker_5x, 0x0x5c6781
+REG OP HNDLR x_MtkCfg_Aud_Set_Speaker_7x, 0x0x5c676b
+REG OP HNDLR x_MtkCfg_Aud_Get_Spectrum_Info, 0x0x5c6755
+REG OP HNDLR x_MtkCfg_Aud_Enable_Spdif_Output, 0x0x5c673b
+REG OP HNDLR x_MtkCfg_Hdmi_Get_Sink_Cap, 0x0x5c6725
+REG OP HNDLR x_MtkCfg_Hdmi_Set_Property, 0x0x5c670f
+REG OP HNDLR x_MtkCfg_Hdmi_Set_Hdcp_Onoff, 0x0x5c66f5
+REG OP HNDLR x_MtkCfg_Hdmi_Get_Edid, 0x0x5c66df
+REG OP HNDLR x_MtkCfg_Hdmi_GetConnectStatus, 0x0x5c66c9
+REG OP HNDLR x_MtkCfg_Hdmi_SetRepeaterMode, 0x0x5c66b1
+REG OP HNDLR x_MtkCfg_OSD_Set_Transparency, 0x0x5c6699
+REG OP HNDLR x_MtkCfg_OSD_ShowSDWarningMessage, 0x0x5c667d
+REG OP HNDLR x_MtkCfg_OSD_HideBootLogo, 0x0x5c6669
+REG OP HNDLR x_MtkCfg_OSD_SetPlaneOrder, 0x0x5c6653
+REG OP HNDLR x_MtkCfg_OSD_SetSafeArea, 0x0x5c662f
+REG OP HNDLR x_MtkCfg_OSD_StartSnapshot, 0x0x5c6615
+REG OP HNDLR x_MtkCfg_OSD_StopSnapshot, 0x0x5c65ff
+REG OP HNDLR x_MtkCfg_OSD_GetDepth, 0x0x5c65e9
+REG OP HNDLR x_MtkCfg_OSD_SaveDepth, 0x0x5c65d3
+REG OP HNDLR x_MtkCfg_OSD_ApplyDepth, 0x0x5c65bd
+REG OP HNDLR x_MtkCfg_OSD_Set_Colorkey, 0x0x5c659b
+REG OP HNDLR x_MtkCfg_OSD_SetDisplayRectangle, 0x0x5c6577
+REG OP HNDLR x_MtkCfg_Sys_Set_SdkLog_OnOff, 0x0x5c655d
+REG OP HNDLR x_MtkCfg_Sys_Standby, 0x0x5c6543
+REG OP HNDLR x_MtkCfg_Sys_Reboot, 0x0x5c652f
+REG OP HNDLR x_MtkCfg_Sys_SendIRKey, 0x0x5c6517
+REG OP HNDLR x_MtkCfg_Sys_Get_IRGroupID, 0x0x5c6501
+REG OP HNDLR x_MtkCfg_Tve_GetYLevel, 0x0x5c64eb
+REG OP HNDLR x_MtkCfg_Tve_SetYLevel, 0x0x5c64d5
+REG OP HNDLR x_MtkCfg_Tve_GetSyncLevel, 0x0x5c64bf
+REG OP HNDLR x_MtkCfg_Tve_SetSyncLevel, 0x0x5c64a9
+REG OP HNDLR x_MtkCfg_Tve_GetMultiBurstInfo, 0x0x5c6493
+REG OP HNDLR x_MtkCfg_Tve_SetMultiBurstInfo, 0x0x5c647d
+REG OP HNDLR x_MtkCfg_Tve_GetVectorLevel, 0x0x5c6467
+REG OP HNDLR x_MtkCfg_Tve_SetVectorLevel, 0x0x5c6451
+REG OP HNDLR x_MtkCfg_Tve_GetYcDelay, 0x0x5c643b
+REG OP HNDLR x_MtkCfg_Tve_SetYcDelay, 0x0x5c6425
+REG OP HNDLR x_MtkCfg_Tve_GetColorBurstLevel, 0x0x5c640f
+REG OP HNDLR x_MtkCfg_Tve_SetColorBurstLevel, 0x0x5c63f9
+REG OP HNDLR x_MtkCfg_OSD_Restore_Cur_Region, 0x0x5c63e5
+REG OP HNDLR x_MtkCfg_CEC_Open, 0x0x5c6355
+REG OP HNDLR x_MtkCfg_CEC_Close, 0x0x5c62c5
+REG OP HNDLR x_MtkCfg_CEC_OneTouchPLay, 0x0x5c6289
+REG OP HNDLR x_MtkCfg_CEC_Send_Active_Src, 0x0x5c6275
+REG OP HNDLR x_MtkCfg_CEC_Send_Inactive_Src, 0x0x5c6261
+REG OP HNDLR x_MtkCfg_CEC_Report_Power_Status, 0x0x5c6241
+REG OP HNDLR x_MtkCfg_CEC_Set_Standby, 0x0x5c621d
+REG OP HNDLR x_MtkCfg_CEC_Feature_Abort, 0x0x5c6205
+REG OP HNDLR x_MtkCfg_CEC_Set_Audio_Mode, 0x0x5c61e7
+REG OP HNDLR x_MtkCfg_CEC_Report_Audio_Status, 0x0x5c61c7
+REG OP HNDLR x_MtkCfg_CEC_User_Ctrl_Pressed, 0x0x5c61ad
+REG OP HNDLR x_MtkCfg_CEC_User_Ctrl_Released, 0x0x5c6197
+REG OP HNDLR x_MtkCfg_CEC_Set_Osd_Name, 0x0x5c6177
+REG OP HNDLR x_MtkCfg_CEC_Get_Active_Status, 0x0x5c6161
+rpcu_tl_log_start is already done
+Open Server:mtkcfg
+Initialize cfg server done ##, id=4
+MMW init Phase 2 time elapsed: 94000 (us)
+[FastBoot]APP_INIT_Start...
+[custom_application_notify ] : NOTIFICATION_INIT>>> argc:0x2  args->i4_level:0x1
+[FAST_BOOT] NOTIFY_BD_DLL_LEVEL
+[application_notify] NOTIFICATION_INIT level:0x1
+[APP_init]application_init
+a_testcli_init already called
+[factory_test_get_bar_code]ERR get partition id error -1
+[APP init] NOTIFICATION_INIT's level:0x1
+<IDS>Open hdcp service return = 0x0
+<IDS> i4CreateCmdQueue return= 0
+Create MPE task here,task id is: 0
+Create MPE task here,task id is: 1
+Create MPE task here,task id is: 2
+Create MPE task here,task id is: 3
+{PBMG}pbmg_msg_proc_init: Enter this function
+hxp, to register cb to dm
+[SCOM] open name=snk_MainDisp
+[SCOM] open handle=10612308
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<ACFG> a_cfg_get_scom_for_set call _get_scom_for_set 14650
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13667:-1
+<ACFG_GRP_TV>_acfg_comp_pri_output_ntsc_cav_output() is called
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+[PLAYBACK] b_hdmi_connected is 0, ui1_resolution is 0
+[PLAYBACK]a_pb_cav_output_should_down_sample return TRUE line 675
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13667:-1
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<Playback>u4OSDPlane5Flag is 2
+[PLAYBACK] b_hdmi_connected is 0, u4_pb_OSDPlane5Flag is 2 line 780
+<PLAYBACK>a_pb_osd5_is_shown is TRUE line 801
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+[PLAYBACK] b_hdmi_connected is 0, ui1_resolution is 0
+[PLAYBACK]a_pb_cav_output_should_down_sample return TRUE line 675
+{ACFG}INFO: ACFG_SD_FLAG  b_is_OSD5Enable = 0 L8602
+{ACFG}INFO: hdmi_output = 0 L=8852
+{ACFG}INFO: hdmi_output width = 1920 
+{ACFG}INFO: hdmi_output height = 1080 
+{ACFG}INFO: hdmi_output progressive = 1 
+{ACFG}INFO: hdmi_output e_new_v_freq = 0 
+
+{ACFG}INFO: hdmi_output freq = 60 
+
+<ACFG> c_scc_vid_get_display_option is: 0, so do not set option
+<PB>receive hd msg osd5 is 0
+<PB>receive hd on msg osd5 is 0
+{GRAPHIC} ERR: GLR_INV_HANDLE (-2) at L875
+
+{GRAPHIC} ERR: i4_ret (-2) at L908
+
+<PB>NO_CONCURRENT_ANALOG on
+gl_gpu_init x_glib_gpu_open return i4_ret =0 h_gpu_ui =91855
+gl_gpu_init x_glib_gpu_open return i4_ret =0  h_gpu_bdj =91854
+{GRAPHIC} ERR: GLR_INV_HANDLE (-2) at L5173
+
+{GRAPHIC} ERR: GLR_INV_HANDLE (-2) at L875
+
+{GRAPHIC} ERR: i4_ret (-2) at L844
+
+<PLAYBACK> ERR: file = src/application/playback/playback_center.c, line = 798, reason = -2
+{GRAPHIC} ERR: GLR_INV_HANDLE (-2) at L875
+
+{GRAPHIC} ERR: i4_ret (-2) at L722
+
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_language.c:317:-1
+<Digest Module> c_digest_mode_init  
+< thread> suspend  thread!!
+[factory_test_get_bar_code]ERR get partition id error -1
+Please run your command!!!
+[factory_test_get_bar_code]ERR get partition id error -1
+[PLAT_CFG]<get_config_from_file>SDK_CONFIG_FACTORY_TEST_AUTO_DL_SCRIPT = 0
+[factory_test_create_main_thread] create factory_test_ipc thread ok!
+<MwNetCfg> GET MAC in File Mode.
+<MwNetCfg> x_fm_open fail: src/mw/network/linux_c_api/c_mt_lx_net_cfg.c, 2805, [file name] is/misc/network.ini
+<FACTORY>Create factory_test_create_main_thread success!!
+[is_key_block_exist]ERR get partition id error -1
+Software Version : 1.40.90
+MCU Version : 0001
+Boot Code : 1004
+Mac Addr : 
+HDCP Key : NG
+[FACTORY_IPC] Calling -------> init_factory_test_msg_queue
+[FACTORY_IPC] Calling -------> factory_test_new_msg_que
+[FACTORY_IPC]factory_new_msg_que successed!
+[FACTORY_IPC] Calling -------> factory_test_new_msg_que
+[FACTORY_IPC]factory_new_msg_que successed!
+<AM>>>>>>>>> [c_scc_comp_grp_set] ret=0
+<acfg>a_acfg_init_move_to_phase2() is called!
+[SCOM] open name=snk_MainDisp
+[SCOM] open handle=10612336
+<acfg> _acfg_post_init()
+<ACFG> set sharpness f000 to SCC	 TV 
+<ACFG> _acfg_post_drc_setting_update ui1_value=(0)
+<ACFG> c_scc_aud_send_se_opcmd rOpCmd.u4OpCode=(1)
+<ACFG> c_scc_aud_send_se_opcmd rAudSe.u4DrcOrder=(0)
+<ACFG> a_cfg_get_neo6, value : 0
+<ACFG> a_cfg_get_neo6, value : 0
+<ACFG> a_cfg_set_mvs, value : 0
+<ACFG> a_cfg_get_mvs, value : 0
+<ACFG> a_cfg_set_downsample, value : 0
+<ACFG> a_cfg_get_mvs, value : 0
+<ACFG> a_cfg_get_mvs_mode, value : 0
+rAudSeMvs.u4WidthGain      :838860
+rAudSeMvs.u4LRGain      :1677721
+{PBMG}ERR: c_pbmg_session_id_get failed, NOT init BD yet, at L2308
+<IDS>vIdsSetCheckDvdVideoFirst =[0x1]
+sacd_cap = 0 
+<IDS>vIdsSetAuto2SacdLayer =[0x0]
+Set playtype map parameter error
+[EXTRES] image resource rlease successfully.
+[PLAT_CFG]<get_config_from_file>SDK_CONFIG_FACTORY_TEST_MSG_ENABLE = 0
+[MTKCFG][INFO] [c_MtkLib_Cfg_Register_Acfg_Funcs] pAcfgFuncs[0x974180]
+[NOTIFY] send_notification:0x100
+[application_notify] NOTIFICATION_INIT level:0x40
+[APP_init]application_init
+a_testcli_init already called
+[factory_test_get_bar_code]ERR get partition id error -1
+[APP init] NOTIFICATION_INIT's level:0x40
+[MTKCFG][INFO] MtkLib_Cfg_Open
+[SCOM] open name=MTKCFG
+[SCOM] open handle=10612364
+[MTKCFG][INFO] Open CFG Instance successed
+[MTKCFG][INFO] MtkLib_Cfg_Vid_Get_Cps_Info
+[MTKCFG][INFO] MtkLib_Cfg_Vid_Set_Cps_Info
+[MTKCFG][INFO] u1Cgms=0, u1Aps=0, fgICT=1, fgCVBSOutput=1, fgCAVOutput=1
+[MTKCFG][INFO] MtkLib_Cfg_Close
+[scom] close handle = 10612364
+[scom] MTKCFG closed
+[scom] pt_scom_cb.fg_opened= 0
+[PLAT_CFG]<get_config_from_file>SDK_CONFIG_NETWORK_DHCP = 0
+[custom] custom_cli_rel_init
+Hello world : Platform initialized, tPlatformInit = 0x4d184000, i4GetValRel : 0, i4Value : 0, i4PostRel = 0. 
+[custom_main] exit 
+[NOTIFY] send_notification:0x3ff
+[DRV_INIT_PROG] driver_notify, argc:2
+[DRV_INIT_PROG] vDriverInit, level:2
+[DRV_INIT_PROG] vDriverInit, to insert splitter module!
+[DRV_INIT_PROG] vDriverInit, insert splitter module!
+Wait Semaphore : Platform initialized, tPlatformInit = 0x40021000, i4GetValRel : 0 (i4GetValue : 0), i4WaitRel = 0, i4PostRel = 0. 
+[PCTool]Waiting for MPTool...
+c_iom_ctrl_vfd cannot be used,VFD module DISABLED
+Display string in VFD error -1
+SYSTEM,Event:[INIT-DONE]SYSTEM,Event:[MCSP_Starter DONE]
+[DRV_INIT_PROG] insert_kernel_module bFileName :/lib/modules/2.6.35/BDP/splitter.ko.
+[DLL_UTIL] open e_dllid=1
+[DLL_UTILL]e_dllid=1  lock done
+ [DLL_UTILL]dll_is_opened?
+=rcS End=
+
+
+BusyBox v1.17.2 (2014-03-05 08:24:10 CST) built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+[DLL_UTILL] dlopen
+[DLL_UTIL] dll opened, count = 1
+sps test cli init OKmpc pre cli uninit OK
+[MPC] mpc test cli init OK
+net_cli_init...
+net_cli_init...1..
+[FastBoot]APP_INIT_Start...
+[custom_application_notify ] : NOTIFICATION_INIT>>> argc:0x2  args->i4_level:0x2
+[FAST_BOOT] NOTIFY_LP_DLL_LEVEL
+[application_notify] NOTIFICATION_INIT level:0x2
+[APP_init]application_init
+a_testcli_init already called
+[factory_test_get_bar_code]ERR get partition id error -1
+[APP init] NOTIFICATION_INIT's level:0x2
+[APP init]##AutoTest#app_init...ok
+[APP init]##AutoTest#app_init...ok
+MCSP_getsystime: CLKS_PER_SEC=100!
+Module:MCSP_STARTER,Event:[START],TimeStamp,4295953360
+[STARTER]mcsp_starter.c:575 main: mcsp starter now begin
+
+[STARTER]mcsp_starter.c:637 main: Input file /etc/launcher.ini,WaitTimeOut 20,RetryCount 0
+
+[STARTER]mcsp_starter.c:142 CfgFileParser: Parsing launcher.ini...
+[STARTER]mcsp_starter.c:221 CfgFileParser: Parsing launcher.ini done
+[STARTER]mcsp_starter.c:652 main: Init EvtMgr Interface...
+[STARTER]mcsp_starter.c:679 main: Init EvtMgr Interface done
+Module:MCSP_STARTER,Event:[READY],TimeStamp,4295953370
+[STARTER]mcsp_starter.c:695 main: Parsing done,now going to start app
+[STARTER]mcsp_starter.c:704 main: =========Start Current Group===========
+Module:/mnt/app/bin/mcspLogServer,Event:[LOAD],TimeStamp,4295953370
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/mcspLogServer has no event to wait
+Module:/mnt/app/bin/mcspcfg,Event:[LOAD],TimeStamp,4295953380
+[STARTER]mcsp_starter.c:706 main: =========Cur Group Start Finished,wait app ready Event=====
+[STARTER]mcsp_starter.c:720 main: Wait App Evt...
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/mcspcfg
+======argv[0]=/mnt/app/bin/mcspcfg=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/mcspcfg in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/mcspLogServer
+======argv[0]=/mnt/app/bin/mcspLogServer=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/mcspLogServer in child process
+mcspLogServer MCSP_LOG_INIT successed
+[get_ini.c:207][get_ini_string]filename /etc/logUpload.ini not exist
+[get_ini.c:207][get_ini_string]filename /etc/logUpload.ini not exist
+[get_ini.c:207][get_ini_string]filename /etc/logUpload.ini not exist
+[get_ini.c:207][get_ini_string]filename /etc/logUpload.ini not exist
+[get_ini.c:207][get_ini_string]filename /etc/logUpload.ini not exist
+[get_ini.c:207][get_ini_string]filename /etc/logUpload.ini not exist
+[get_ini.c:207][get_ini_string]filename /etc/logUpload.ini not exist
+start tool agent
+the file size is 895 
+time is [=====Fri Jan  1 07:00:03 2010
+====
+]
+pTemp get FlashWriteTime 2000
+pTemp get MaxSectionNum 31
+pTemp get MaxKeyNum 1024
+pTemp get XMLFilePath /mnt/data/acs/
+pTemp get ImportantSection Vmdrm,Version,Common,System,SIP,Vlan,IPV6,Acs,QOS,qcs,Common_ext,Unicom,Pltm_option,License,Irddrm,Icasdrm
+
+pTemp get VaildCfgPath /etc/
+mcsp_cfgmng.c [6091] MCSP_SetCfgDebug:/var/mcsp_debug is null,CfgDebug = 0
+------------------config mtd=3---------------------,247
+-----MTD_DEVICE_NAME=/dev/mtd3-----326
+-----m_tState.iFd=8-----335
+mcspcfg Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received mcspcfg:0
+Module:/mnt/app/bin/mcspcfg,Event:[START],TimeStamp,4295953650
+mcspcfg Sending Start Evt done
+mcspcfg Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received mcspcfg:1
+Module:/mnt/app/bin/mcspcfg,Event:[READY],TimeStamp,4295953650
+[STARTER]mcsp_starter.c:733 main: =========Cur Group Start Finished,all Event received=====
+[STARTER]mcsp_starter.c:738 main: Switch to next group
+[STARTER]mcsp_starter.c:704 main: =========Start Current Group===========
+Module:/mnt/app/bin/ServiceMonitor,Event:[LOAD],TimeStamp,4295953650
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/ServiceMonitor has no event to wait
+Module:/mnt/app/bin/keymanager,Event:[LOAD],TimeStamp,4295953660
+Module:/mnt/app/bin/cfgdispatcher,Event:[LOAD],TimeStamp,4295953660
+Module:/mnt/app/bin/mcsp_cfgexport /etc/stb.cfg,Event:[LOAD],TimeStamp,4295953660
+[STARTER]mcsp_starter.c:442 StartApp: Now Wait /mnt/app/bin/mcsp_cfgexport /etc/stb.cfg to finish
+mcspcfg Sending Start Evt done
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/cfgdispatcher
+======argv[0]=/mnt/app/bin/cfgdispatcher=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/cfgdispatcher in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/ServiceMonitor
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/keymanager
+======argv[0]=/mnt/app/bin/keymanager=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/keymanager in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/mcsp_cfgexport /etc/stb.cfg
+======argv[0]=/mnt/app/bin/mcsp_cfgexport=====
+======argv[1]=/etc/stb.cfg=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/mcsp_cfgexport in child process
+======argv[0]=/mnt/app/bin/ServiceMonitor=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/ServiceMonitor in child process
+cfgdispatcher Sending Start Evt now
+cfgdispatcher Sending Start Evt done
+cfgdispatcher Sending Start Evt now
+cfgdispatcher Sending Start Evt done
+cfgexport-info: signalInit for mcsp_cfgexport, PID=998!
+keymanager Sending Start Evt now
+keymanager Sending Start Evt done
+keymanager Sending Start Evt now
+keymanager Sending Start Evt done
+cfgexport: output file is: /etc/stb.cfg
+=====cfgexport-info: cfgms is alive, transport online=====
+cfgexport-info: ========export config success!========
+
+[STARTER]mcsp_starter.c:445 StartApp: /mnt/app/bin/mcsp_cfgexport /etc/stb.cfg finished
+[STARTER]mcsp_starter.c:706 main: =========Cur Group Start Finished,wait app ready Event=====
+[STARTER]mcsp_starter.c:720 main: Wait App Evt...
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received cfgdispatcher:0
+Module:/mnt/app/bin/cfgdispatcher,Event:[START],TimeStamp,4295953970
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received cfgdispatcher:1
+Module:/mnt/app/bin/cfgdispatcher,Event:[READY],TimeStamp,4295953970
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received keymanager:0
+Module:/mnt/app/bin/keymanager,Event:[START],TimeStamp,4295953970
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received keymanager:1
+Module:/mnt/app/bin/keymanager,Event:[READY],TimeStamp,4295953970
+[STARTER]mcsp_starter.c:733 main: =========Cur Group Start Finished,all Event received=====
+[STARTER]mcsp_starter.c:738 main: Switch to next group
+[STARTER]mcsp_starter.c:704 main: =========Start Current Group===========
+Module:/mnt/app/bin/DecMain,Event:[LOAD],TimeStamp,4295953970
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/DecMain has no event to wait
+Module:/mnt/app/bin/qSkbIme -qws -display directfb,Event:[LOAD],TimeStamp,4295953970
+[STARTER]mcsp_starter.c:706 main: =========Cur Group Start Finished,wait app ready Event=====
+[STARTER]mcsp_starter.c:720 main: Wait App Evt...
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/DecMain
+======argv[0]=/mnt/app/bin/DecMain=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/DecMain in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/qSkbIme -qws -display directfb
+======argv[0]=/mnt/app/bin/qSkbIme=====
+======argv[1]=-qws=====
+======argv[2]=-display=====
+======argv[3]=directfb=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/qSkbIme in child process
+scanning for devices in /dev/input/
+
+	trying uinput
+	trying mice
+Cannot find event device. Are you sure the event device is enabled?
+{IOM_ADAPTER}i4_MTK_KB_Init fail
+<IMTKAPP_APP>Open keyboard iom OK
+
+###############################################################
+#                                                             #
+#                                                             #
+#                  Decoder IS RUNING                  #
+#                  CODING IS BORING ........          #
+#                                                             #
+#                                                             #
+###############################################################
+Log init success
+DecReadSTBCfg pDecConfig->iVolume = 65.
+Decoder: SDK is initialized successfully !
+MtkSetErrRecoveryMode start, i32DecoderID: 0, uiMode: 0.
+MtkSetErrRecoveryMode ok, i32DecoderID: 0, fgSetErrRecoveryMode: 1, u32RecoveryMode: 0.
+MtkSetErrRecoveryMode start, i32DecoderID: 1, uiMode: 0.
+MtkSetErrRecoveryMode ok, i32DecoderID: 1, fgSetErrRecoveryMode: 1, u32RecoveryMode: 0.
+c_rpc_client_init is called
+rpc_init is called
+_init_hash(), ui4_tbl_len_order=10, ui4_num=1024
+ipc_init is called, L2813
+ipc_init is called, L2816
+getline,ps_line=/mnt/app/bin/DecMain, read_size=21, z_len=120
+ipc_init is called, L2834
+ipc_init is called, L2839
+ipc_init is called, L2881
+ipc_init is called, pv_key_sess=0x8084d0, L2891
+ipc_init is called, L2900
+ipc_init is called, L2908
+pt_free = &pt_sess_tbl[1]
+ipc_init is called, L2914
+RPC Inited
+rpcu_tl_log_start is called
+rpcu_tl_log_is_on is called
+c_rpc_reg_mtkpbctrl_cb_hndlrs is called
+REG CB HNDLR x_mtkpbctrl_cli_fct, 0x0x40028d6c
+REG CB HNDLR x_mtkpbctrl_nfy_fct, 0x0x4002be4c
+REG CB HNDLR x_mtkpbctrl_pull_open_nfy_fct, 0x0x4002bb38
+REG CB HNDLR x_mtkpbctrl_pull_close_nfy_fct, 0x0x4002b8d8
+REG CB HNDLR x_mtkpbctrl_pull_MapMemSlice_nfy_fct, 0x0x4002b5b0
+REG CB HNDLR x_mtkpbctrl_pull_UnmapMemSlice_nfy_fct, 0x0x4002b304
+REG CB HNDLR x_mtkpbctrl_pull_read_nfy_fct, 0x0x4002b010
+REG CB HNDLR x_mtkpbctrl_pull_read_async_nfy_fct, 0x0x4002a784
+REG CB HNDLR x_mtkpbctrl_pull_abort_read_nfy_fct, 0x0x4002a62c
+REG CB HNDLR x_mtkpbctrl_byteseek_nfy_fct, 0x0x4002a484
+REG CB HNDLR x_mtkpbctrl_get_input_length_nfy_fct, 0x0x4002a32c
+REG CB HNDLR x_mtkpbctrl_Ipc_SendData_nfy_fct, 0x0x40029ee0
+REG CB HNDLR x_mtkpbctrl_Enc_Buf_Cb_Fct, 0x0x40029404
+REG CB HNDLR x_mtkpbctrl_filter_allocate_nfy_fct, 0x0x400291ec
+REG CB HNDLR x_mtkpbctrl_sp_nfy_fct, 0x0x40028f80
+RPC_REG_CB_HNDLR succeed
+c_rpc_client_init is called
+rpc_init is called
+rpc_init is already done
+ipc_init is called, L2813
+ipc_init is called, L2816
+getline,ps_line=/mnt/app/bin/DecMain, read_size=21, z_len=120
+ipc_init is called, L2834
+ipc_init is called, L2839
+ipc_init is called, L2881
+ipc_init is called, pv_key_sess=0x8084d0, L2891
+ipc_init is called, L2900
+ipc_init is called, L2908
+ipc_init is called, L2914
+RPC Inited
+rpcu_tl_log_start is already done
+REG CB HNDLR x_mtkpbsnd_send_data_nfy_fct, 0x0x4024cfb4
+REG CB HNDLR x_mtkpbsnd_nfy_fct, 0x0x4024cf60
+rpc_init is called
+rpc_init is already done
+ipc_init is called, L2813
+ipc_init is called, L2816
+getline,ps_line=/mnt/app/bin/DecMain, read_size=21, z_len=120
+ipc_init is called, L2834
+ipc_init is called, L2839
+ipc_init is called, L2881
+ipc_init is called, pv_key_sess=0x8084d0, L2891
+ipc_init is called, L2900
+ipc_init is called, L2908
+ipc_init is called, L2914
+RPC Inited
+rpcu_tl_log_start is already done
+REG CB HNDLR x_mtkcfg_nfy_fct, 0x0x4025f40c
+REG CB HNDLR x_mtkcfg_cec_nfy_fct, 0x0x4025f440
+REG CB HNDLR x_mtkcfg_aud_streaminfo_callback, 0x0x4025f474
+Open Client:mtkcfg
+[RPCIPC]<Client>App(threadID=0x40022040)call ipc_open_client
+[RPCIPC]<Client>create CT socket fd: 14
+[RPCIPC]<Client>create it socket()
+[RPCIPC]<Client>ipc_open_client create IT socket fd: 15
+ct connect()...
+[RPCIPC]<Client>ct connect Server IPC successful
+[RPCIPC]<Client>rpcu_os_tls_set()...
+[RPCIPC]<Client>ct sock  send()...
+[RPCIPC]2 add_sess_t():t_id=5,i4_it_sock=20, i4_ct_sock=-1
+[RPCIPC]<Server>alloc t_id =5 @line:1685
+[RPCIPC]IPC Server thread(threadID=0x4df37460:t_id:5)started
+[RPCIPC]<Client>ct recv()...
+[RPCIPC]<Client> alloc t_id =1
+[RPCIPC]2 add_sess_t():t_id=1,i4_it_sock=15, i4_ct_sock=14
+[RPCIPC]<client>App Thread(0x40022040) create ipc thread-----
+[RPCIPC]IPC client thread started(ThreadID==0x41f75460 :t_id=1)
+[MTKCFG][INFO] MtkLib_Cfg_Open
+[SCOM] open name=MTKCFG
+[SCOM] open handle=10612364
+[MTKCFG][INFO] Open CFG Instance successed
+<CFG SERVER>server index 0 register handle: 0
+<CFG CLIENT>x_MtkCfg_Open succeed, t_mtkcfg_client_info[0].h_handle is: 0
+<CFG SERVER>index 0 register handle: 0
+<CFG SERVER> pt_args[0].u.ui4_arg : 0, pf_nfy : 0x5c7191, pt_nfy_tag : 0xb4b648
+[MTKCFG][INFO] MtkLib_Cfg_EvtRegCallback, hHandle : 0, pfnCallback : 0x5c7191, pvAppCbTag : 0xb4b648
+[MTKCFG][INFO] MtkLib_Cfg_Aud_Set_Hdmi_Output_Format. eFormat=1
+[MTKCFG][INFO] MtkLib_Cfg_Aud_Set_Spdif_Output_Format. eFormat=1
+[MTKCFG][INFO] MtkLib_Cfg_Aud_Set_Hdmi_Mode. eMode=0
+[MTKCFG][INFO] MtkLib_Cfg_Aud_Set_Hdmi_Mode. eMode=3
+[MTKCFG][INFO] MtkLib_Cfg_Vid_Set_Aspect_Ratio
+[MTKCFG][INFO] x_scom_get_asp ok. scom_get_asp.ar = 2
+[SCOM] rm_ret=0
+[MTKCFG][INFO] x_scom_set_asp ok. scom_set_asp.ar = 2
+ to open OSD_Antiflicker 9 
+OSD_Antiflicker 
+<Client> IMtkPb_Ctrl_Open ---> is called @Line: 2171!
+c_rpc_start_client is called
+pf_log_fct=0x40281dc8, i4_log_level=15
+Open Client:mtkpbctrl -logfunction -loglevel
+[RPCIPC]<Client>App(threadID=0x40022040)call ipc_open_client
+SN test ipc_open_client(), this thread already has valid session, tid:1
+<Client> t_client_rpc_id is: 1, @Line: 2205 
+<Client> CMIF Process ID is: 1008, 
+<Client> CMIF Process ID is: 1008, @Line: 2285 
+<Server> [Open] t_server_info[0]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+<Server> [Open] t_server_info[1]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+<Server> [Open] t_server_info[2]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+<Server> [Open] t_server_info[3]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+<Server> [Open] t_server_info[4]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+<Server> [Open] t_server_info[5]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+[MTKPBCTRL] [MTKPBCTRL] Sub_IMtkPb_Ctrl_Open: 
+[MTKPBCTRL] Lock sub mtkpbctrl semaphore is OK
+[MTKPBCTRL] [MTKPBCTRL] t_MtkPbCtrlInfo[0].bUsed = 0x0 
+[MTKPBCTRL] <AMCTRL>MtkPbLib_AMCtrl_Open, ui4_init_count = [1]
+[MTKPBCTRL] <AMCTRL>MtkPbLib_AMCtrl_Open, szCmdQueueName = [mtkpbam_cmd_0001]
+[SCOM] open name=MPC_MainDisp
+[SCOM] open handle=10612392
+[MPC] MPC_STR_CREATE_INST_SUCCESS_[0]
+[MTKPBCTRL] <MPCWP>MPC: Send MPC_SCMD_INIT, return 0x21000100 
+[MTKPBCTRL] <MPCWP>i4SendCmd success, plz wait i4WaitMpcCmdRtn, eCmd is 1
+[MTKPBCTRL] [AMMGR]AMMgrInit, u4InitCount = [1]
+[MTKPBCTRL] [AMMGR]AMMgrInit, szNfyMsgQueueName = [am_nfy_msgq_0001]
+[MTKPBCTRL] <AMCTRL>AMMgrInit, create notify message queue OK, m_hNfyMsgQ: 0xbe7398, szNfyMsgQueueName: am_nfy_msgq_0001
+[MTKPBCTRL] <AMMGR>AMMgrNotifyThread start, this: 0xbcdc00, pvTag: 0xbcdc00 
+[MTKPBCTRL] <AMCTRL>AMMgrInit, create notify thread OK, m_hNfyThread: 0xbe75d8, szNfyThreadName: am_nfy_task_0001
+[MTKPBCTRL] <AMCTRL>CMIF THREAD MTKPBLIB_AMMGR_TASK_PRIORITY: 171 
+[MTKPBCTRL] [MTKPBCTRL]Sub_IMtkPb_Ctrl_Open: hHandle = 0x166ac, ui4Cnt[0]
+[MTKPBCTRL] Unlock sub mtkpbctrl semaphore, i4_ret is 0
+<Server> [Open] new server[0] cmifPid: 1008!
+[MTKPBCTRL] <MPCWP> i4SwIpcRpcMode fgIpcRpc 1
+<Client> IMtkPb_Ctrl_Reg_CLI ------> is Called 12357
+<Server> _hndlr_x_MtkPb_Ctrl_Reg_CLI ---> is called @Line: 9271!
+<Client> x_MtkPb_Ctrl_Open succeed, t_client_info[0].h_handle is: 0, @Line: 2319 
+<SERVER> RegCallback, pf_nfy: 0x5c3771, pt_nfy_tag: 0xbe7790, t_id: 5 
+<Client> IMtkPb_Ctrl_Open ---> is called @Line: 2171!
+<Client> t_client_rpc_id is: 1, @Line: 2205 
+<Client> CMIF Process ID is: 1008, 
+<Client> CMIF Process ID is: 1008, @Line: 2285 
+<Server> [Open] t_server_info[0]!
+<Server> [Open] cmifPid: 1008!
+<Server> [Open] h_handle: 0!
+<Server> [Open] t_server_info[1]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+<Server> [Open] t_server_info[2]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+<Server> [Open] t_server_info[3]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+<Server> [Open] t_server_info[4]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+<Server> [Open] t_server_info[5]!
+<Server> [Open] cmifPid: 0!
+<Server> [Open] h_handle: 0!
+[MTKPBCTRL] [MTKPBCTRL] Sub_IMtkPb_Ctrl_Open: 
+[MTKPBCTRL] Lock sub mtkpbctrl semaphore is OK
+[MTKPBCTRL] [MTKPBCTRL] t_MtkPbCtrlInfo[0].bUsed = 0x1 
+[MTKPBCTRL] [MTKPBCTRL] t_MtkPbCtrlInfo[1].bUsed = 0x0 
+[MTKPBCTRL] <AMCTRL>MtkPbLib_AMCtrl_Open, ui4_init_count = [2]
+[MTKPBCTRL] <AMCTRL>MtkPbLib_AMCtrl_Open, szCmdQueueName = [mtkpbam_cmd_0002]
+[SCOM] open name=MPC_MainDisp
+[SCOM] open handle=10612420
+[MPC] MPC_STR_CREATE_INST_SUCCESS_[1]
+[MTKPBCTRL] <MPCWP>MPC: Send MPC_SCMD_INIT, return 0x21000100 
+[MTKPBCTRL] <MPCWP>i4SendCmd success, plz wait i4WaitMpcCmdRtn, eCmd is 1
+[MTKPBCTRL] [AMMGR]AMMgrInit, u4InitCount = [2]
+[MTKPBCTRL] [AMMGR]AMMgrInit, szNfyMsgQueueName = [am_nfy_msgq_0002]
+[MTKPBCTRL] <AMCTRL>AMMgrInit, create notify message queue OK, m_hNfyMsgQ: 0xc01090, szNfyMsgQueueName: am_nfy_msgq_0002
+[MTKPBCTRL] <AMMGR>AMMgrNotifyThread start, this: 0xbe77c8, pvTag: 0xbe77c8 
+[MTKPBCTRL] <AMCTRL>AMMgrInit, create notify thread OK, m_hNfyThread: 0xc012d0, szNfyThreadName: am_nfy_task_0002
+[MTKPBCTRL] <AMCTRL>CMIF THREAD MTKPBLIB_AMMGR_TASK_PRIORITY: 171 
+[MTKPBCTRL] [MTKPBCTRL]Sub_IMtkPb_Ctrl_Open: hHandle = 0x166aa, ui4Cnt[1]
+[MTKPBCTRL] Unlock sub mtkpbctrl semaphore, i4_ret is 0
+<Server> [Open] new server[1] cmifPid: 1008!
+[MTKPBCTRL] <MPCWP> i4SwIpcRpcMode fgIpcRpc 1
+<Client> IMtkPb_Ctrl_Reg_CLI ------> is Called 12357
+<Server> _hndlr_x_MtkPb_Ctrl_Reg_CLI ---> is called @Line: 9271!
+<Client> x_MtkPb_Ctrl_Open succeed, t_client_info[1].h_handle is: 1, @Line: 2319 
+<SERVER> RegCallback, pf_nfy: 0x5c3771, pt_nfy_tag: 0xc01520, t_id: 5 
+[MTKCFG][INFO] MtkLib_Cfg_Vid_Set_Cps_Info
+[MTKCFG][INFO] u1Cgms=15, u1Aps=0, fgICT=1, fgCVBSOutput=1, fgCAVOutput=1
+[MTKCFG][INFO] MtkLib_Cfg_Aud_Set_Global_Mute_Unmute. fgMute=1
+Dec_InitTimer MCSP_TimerInit  is sucess
+qSkbIme Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received qSkbIme:0
+Module:/mnt/app/bin/qSkbIme -qws -display directfb,Event:[START],TimeStamp,4295954860
+qSkbIme Sending Start Evt done
+kernel/qcoreapplication.cpp QCoreApplicationPrivate 331
+kernel/qcoreapplication.cpp QCoreApplicationPrivate 346
+kernel/qapplication.cpp QApplicationPrivate 175
+kernel/qapplication.cpp QApplicationPrivate 210
+kernel/qcoreapplication.cpp QCoreApplication 540
+kernel/qcoreapplication.cpp init 603
+kernel/qcoreapplication.cpp init 630
+kernel/qcoreapplication.cpp init 672
+kernel/qcoreapplication.cpp init 676
+kernel/qcoreapplication.cpp QCoreApplication 545
+kernel/qapplication.cpp construct 811
+kernel/qapplication.cpp construct 814
+kernel/qapplication.cpp construct 833
+qt qws, qt_init
+qdirectfbscreen.cpp connect 1126
+qdirectfbscreen.cpp connect 1138
+===========DirectFBInit=========
+DirectFB:fopen(/var/directfbrc) is	null. 
+DirectFB:wait stb.cfg to be created for 0 s
+DirectFB:epgType is: 1
+@@@@@@@@@@  res_change.ini exist, compare the values with STB's. @@@@@@@@@@
+@@@@@@@@@@  res_change.ini value is same with STB's, do nothing. @@@@@@@@@@
+[dfb_config_init] SYSCONFDIR is /etc 
+(*) DirectFB/Config Set no-layer2-support
+(*) DirectFB/Config Set no-dynamic-insert-fusion-ko
+qdirectfbscreen.cpp connect 1148
+
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~| DirectFB 1.2.7 |~~~~~~~~~~~~~~~~~~~~~~~~~~
+        (c) 2001-2008  The world wide DirectFB Open Source Community
+        (c) 2000-2004  Convergence (integrated media) GmbH
+      ----------------------------------------------------------------
+
+(*) DirectFB/Core: Multi Application Core. (2015-10-27 11:33) 
+(*) Fusion/SHM: Using MADV_REMOVE (2.6.35.0 >= 2.6.19.2)
+(*) Direct/Thread: Started 'Fusion Dispatch' (1027) [MESSAGING FIFO/FIFO 44/44] <8388608>...
+(*) MediaTek/System: system_initialize: #301
+(*) Direct/Thread: Started 'VT Switcher' (1030) [CRITICAL FIFO/FIFO 44/44] <8388608>...
+UUU:CONFIG_DIRECTFB_MULTI_MEM_POOL
+[5J] system_initialize -> map memory pool
+[5J] system_initialize -> map cmdbuf
+mt85AdapterCmdBufGetCmdBuf: u4CmdbufLen = 0xB000
+[5J] system_initialize -> map debug info
+(*) Direct/Thread: Started 'PS/2 Input' (1032) [INPUT FIFO/FIFO 44/44] <8388608>...
+(*) DirectFB/Input: IMPS/2 Mouse 1.0 (directfb.org)
+[dfb dbg] driver_get_available 340
+[dfb dbg] driver_open_device 368
+[dfb dbg] create socket...
+(!) DirectFB/LIRC: connect    --> No such file or directory
+(*) Direct/Thread: Started 'Keyboard Input' (1033) [INPUT FIFO/FIFO 44/44] <8388608>...
+(*) DirectFB/Input: Keyboard 0.9 (directfb.org)
+# (*) DirectFB/Graphics: MediaTek 85xx 1.2 (MediaTek)
+(*) DirectFB/Core/WM: Default 0.3 (directfb.org)
+qdirectfbscreen.cpp connect 1439
+Cannot open mouse input device '/dev/input/event0': No such file or directory
+kernel/qapplication.cpp construct 842
+kernel/qapplication.cpp construct 879
+Qt for Embedded Linux 4.7.2 does not support tool windows with frames.
+This behavior will change in a later release. To ensure compatibility with
+future versions, use (Qt::Tool | Qt::FramelessWindowHint).
+cmd object name
+"" 
+true 
+prev focus window: 0x0 
+after setZorder, focus window: 0x0 
+qSkbIme:show lable window
+qSkbIme close lable window
+qSkbIme Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received qSkbIme:1
+Module:/mnt/app/bin/qSkbIme -qws -display directfb,Event:[READY],TimeStamp,4295956250
+[STARTER]mcsp_starter.c:733 main: =========Cur Group Start Finished,all Event received=====
+[STARTER]mcsp_starter.c:738 main: Switch to next group
+[STARTER]mcsp_starter.c:704 main: =========Start Current Group===========
+Module:/mnt/app/bin/netmanager,Event:[LOAD],TimeStamp,4295956250
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/netmanager has no event to wait
+Module:/mnt/app/bin/zerocfg,Event:[LOAD],TimeStamp,4295956250
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/zerocfg has no event to wait
+Module:/mnt/app/bin/zerocfgui,Event:[LOAD],TimeStamp,4295956250
+qSkbIme Sending Start Evt done
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/zerocfgui has no event to wait
+Module:/mnt/app/bin/netaccess -n,Event:[LOAD],TimeStamp,4295956260
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/netaccess -n has no event to wait
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/netmanager
+======argv[0]=/mnt/app/bin/netmanager=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/netmanager in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/zerocfg
+======argv[0]=/mnt/app/bin/zerocfg=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/zerocfg in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/zerocfgui
+======argv[0]=/mnt/app/bin/zerocfgui=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/zerocfgui in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/netaccess -n
+======argv[0]=/mnt/app/bin/netaccess=====
+======argv[1]=-n=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/netaccess in child process
+Module:/mnt/app/bin/vplayer,Event:[LOAD],TimeStamp,4295956270
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/vplayer has no event to wait
+Module:/mnt/app/bin/guifacade,Event:[LOAD],TimeStamp,4295956270
+Module:/mnt/app/bin/mainctrl,Event:[LOAD],TimeStamp,4295956280
+Module:/mnt/app/bin/sqm,Event:[LOAD],TimeStamp,4295956280
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/sqm has no event to wait
+[STARTER]mcsp_starter.c:706 main: =========Cur Group Start Finished,wait app ready Event=====
+[STARTER]mcsp_starter.c:720 main: Wait App Evt...
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/vplayer
+======argv[0]=/mnt/app/bin/vplayer=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/vplayer in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/guifacade
+======argv[0]=/mnt/app/bin/guifacade=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/guifacade in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/mainctrl
+======argv[0]=/mnt/app/bin/mainctrl=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/mainctrl in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/sqm
+======argv[0]=/mnt/app/bin/sqm=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/sqm in child process
+[PrintfHeader][29]:###############################################
+[PrintfHeader][30]:#####ZeroCfgUI Version : v1.0.0 2014-02-20####
+[PrintfHeader][31]:###############################################
+[PrintfHeader][30]:###############################################
+[PrintfHeader][31]:#####ZeroCfg Version : v1.0.0 2014-02-20####
+[PrintfHeader][32]:###############################################
+[InitMcspLog] MCSP_LOG_INIT success, iRepeatTime = 1
+MCSP_getsystime: CLKS_PER_SEC=100!
+[ZC_Mcsp_Init] succ.
+/mnt/app/bin/zerocfg Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received /mnt/app/bin/zerocfg:0
+Module:/mnt/app/bin/zerocfg,Event:[START],TimeStamp,4295956800
+/mnt/app/bin/zerocfg Sending Start Evt done
+[InitMarket][49]:iMarket = 31[OperatorsCode = 1, szMarketCode = 3601]
+[main][74]:ZcState = 0.
+[main][80]:not support ZeroConfig.
+/mnt/app/bin/zerocfg Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received /mnt/app/bin/zerocfg:1
+Module:/mnt/app/bin/zerocfg,Event:[READY],TimeStamp,4295956820
+/mnt/app/bin/zerocfg Sending Start Evt done
+net_control.c [202] NET_SetNADebug:/var/mcsp_debug is null,NADebug = 0
+/mnt/app/bin/sqm Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received /mnt/app/bin/sqm:0
+Module:/mnt/app/bin/sqm,Event:[START],TimeStamp,4295956840
+/mnt/app/bin/sqm Sending Start Evt done
+/mnt/app/bin/netaccess Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received /mnt/app/bin/netaccess:0
+Module:/mnt/app/bin/netaccess -n,Event:[START],TimeStamp,4295957140
+/mnt/app/bin/netaccess Sending Start Evt done
+/mnt/app/bin/netaccess Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received /mnt/app/bin/netaccess:1
+Module:/mnt/app/bin/netaccess -n,Event:[READY],TimeStamp,4295957140
+/mnt/app/bin/netaccess Sending Start Evt done
+ [InitOtherRpcMethodXmlFile1]get the path of XmlFilePath is acFileName=/mnt/data/acs/mcsp_tr069/mcsp_tr069_3601_1/Download.xml 
+ [InitOtherRpcMethodXmlFile1]get the path of XmlFilePath is acFileName=/mnt/data/acs/mcsp_tr069/mcsp_tr069_3601_1/Upload.xml 
+ [InitOtherRpcMethodXmlFile1]get the path of XmlFilePath is acFileName=/mnt/data/acs/mcsp_tr069/mcsp_tr069_3601_1/Reboot.xml 
+ [InitOtherRpcMethodXmlFile1]get the path of XmlFilePath is acFileName=/mnt/data/acs/mcsp_tr069/mcsp_tr069_3601_1/FactoryReset.xml 
+ [InitOtherRpcMethodXmlFile1]get the path of XmlFilePath is acFileName=/mnt/data/acs/mcsp_tr069/mcsp_tr069_3601_1/InformResponse.xml 
+ [InitOtherRpcMethodXmlFile1]get the path of XmlFilePath is acFileName=/mnt/data/acs/mcsp_tr069/mcsp_tr069_3601_1/TransferCompleteResponse.xml 
+[MAIN_Init] MainCtrl process up!!!
+Get version info<ZteBW:v5.53(v5.54.25) 2013-07-12>
+#CYGPS###Start Vod Process#
+
+###############################################################
+#                                                             #
+#                                                             #
+#                    MAINCONTROL IS RUNING                    #
+#                          HAPPY 2012                         #
+#                                                             #
+#                                                             #
+###############################################################
+#CYGPS###Checking DecMain Status ###
+[MC_Mcsp_Init] succ.
+[../../adapter/led/led_adapter.c:161][LEDA_Open][inf]flag = 0x7
+[../../adapter/led/led_adapter.c:104][OpenLed][inf]GetLedName succ Led[1] name[led0]
+[open_led_double:283] "ret=0\n"
+[../../adapter/led/led_adapter.c:113][OpenLed][inf]Open led device succ Led[1] handle[1074148960]
+[../../adapter/led/led_adapter.c:104][OpenLed][inf]GetLedName succ Led[2] name[led2]
+[../../adapter/led/led_adapter.c:113][OpenLed][inf]Open led device succ Led[2] handle[1074149016]
+[../../adapter/led/led_adapter.c:104][OpenLed][inf]GetLedName succ Led[3] name[led1]
+[open_led_double:283] "ret=0\n"
+[../../adapter/led/led_adapter.c:113][OpenLed][inf]Open led device succ Led[3] handle[1074148988]
+[tube_open_io:79] "dev_name=(null)"
+[tube_open_io:81] "fd=-1"
+[tube_open_io:84] "couldn't open /dev/DigTube,fd=-1\n"
+[tube_ctrl.c:32][TUBE_Init][err]Open tube device fail
+[PORTING_LedCtrl][1582] iType = 162,  iLedCtrl = 1, iParam0 = 1, iParam1 = 0
+[set_v4h_led_on:637] "led_flag=1,pld->fd_green=13,pld->fd_red=14"
+[set_v4h_led_double_on:621] "ret=0\n"
+[sw.inf.c:144 CheckToRefresh_swinf]:Enter
+[sw.inf.c:35 GetRawVersionInfoFromFlash]:nDualSys = 1
+libufs: init ufs
+[ufs_get_sysinfo:372] "norm workmode"
+[sw.inf.c:45 GetRawVersionInfoFromFlash]:norm:V72760143.0006 2015-10-27
+[sw.inf.c:156 CheckToRefresh_swinf]:flash version: norm:V72760143.0006 2015-10-27
+[sw.inf.c:170 CheckToRefresh_swinf]:file version: norm:V72760143.0006 2015-10-27
+[sw.inf.c:178 CheckToRefresh_swinf]:bSame: 1
+mc_infoCfg.c [1902] MC_CheckHwinfFileValid:!the input param pStr=/etc/hw.inf 
+mc_infoCfg.c [1918] MC_CheckHwinfFileValid:@@open the /etc/hw.inf ok!
+mc_infoCfg.c [1927] MC_CheckHwinfFileValid:!@@### SEEK_END OK
+mc_infoCfg.c [1954] MC_CheckHwinfFileValid:acHwInfobuf = ZXB700V5S1(IBHF-000-003)
+mc_infoCfg.c [1963] MC_CheckHwinfFileValid:the repair fuction end
+
+[BOARD_GetBoardInfo][174]board infor:
+[BOARD_GetBoardInfo][175]hd_type      : 3
+[BOARD_GetBoardInfo][176]hd_name      : 
+[BOARD_GetBoardInfo][177]hd_ver       : 
+[BOARD_GetBoardInfo][178]cpu_name     : MT8653
+[BOARD_GetBoardInfo][179]cpu_devid    : 0
+[BOARD_GetBoardInfo][180]cpu_extdevid : 0
+[BOARD_GetBoardInfo][181]sys_ram      : 0m
+[BOARD_GetBoardInfo][182]vid_ram      : 0m
+[BOARD_GetBoardInfo][183]nor_flash    : 0m
+[BOARD_GetBoardInfo][184]nand_flash   : 0m
+[BOARD_GetBoardInfo][224]ret = 0
+
+[BOARD_GetBoardInfo][174]board infor:
+[BOARD_GetBoardInfo][175]hd_type      : 3
+[BOARD_GetBoardInfo][176]hd_name      : 
+[BOARD_GetBoardInfo][177]hd_ver       : 
+[BOARD_GetBoardInfo][178]cpu_name     : MT8653
+[BOARD_GetBoardInfo][179]cpu_devid    : 0
+[BOARD_GetBoardInfo][180]cpu_extdevid : 0
+[BOARD_GetBoardInfo][181]sys_ram      : 0m
+[BOARD_GetBoardInfo][182]vid_ram      : 0m
+[BOARD_GetBoardInfo][183]nor_flash    : 0m
+[BOARD_GetBoardInfo][184]nand_flash   : 0m
+[BOARD_GetBoardInfo][224]ret = 0
+************guifacade is running*************
+[mc_infoCfg.c] [2294] [EpgSettingInit]:iScreenLeftOfs:38,iScreenTopOfs:21,iEpgWidth:644,iEpgHeight:534
+[mc_infoCfg.c] [2295] [EpgSettingInit]:nScreenLeftOfs:38,nScreenTopOfs:21,nEpgWidth:644,nEpgHeight:534
+[get_ini.c:207][get_ini_string]filename /etc/hd.conf not exist
+[get_ini.c:207][get_ini_string]filename /etc/hd.conf not exist
+[get_ini.c:207][get_ini_string]filename /etc/hd.conf not exist
+[get_ini.c:207][get_ini_string]filename /etc/hd.conf not exist
+[get_ini.c:207][get_ini_string]filename /etc/hd.conf not exist
+[get_ini.c:207][get_ini_string]filename /etc/hd.conf not exist
+[get_ini.c:207][get_ini_string]filename /etc/hd.conf not exist
+[get_ini.c:207][get_ini_string]filename /etc/hd.conf not exist
+[get_ini.c:207][get_ini_string]filename /etc/hd.conf not exist
+[get_ini.c:544][set_ini_string]file /var/tvstandard isn't existed
+porting.c[1813]{PORTING_SelectLocalPage} rm /zteui/zteui/jsmsgbox_cri
+rm: can't remove '/zteui/zteui/jsmsgbox_cri': No such file or directory
+porting.c[1815]{PORTING_SelectLocalPage}  rm /zteui
+porting.c[1817]{PORTING_SelectLocalPage}  ln -s /mnt/app/zteui /zteui
+[MC]qtadapter.cpp:49 QT_Init: ===========MC side start Qt init===========
+
+porting.c[1819]{PORTING_SelectLocalPage} cp /mnt/app/jsmsgbox_cri/* /var/js_cri/ -a
+kernel/qcoreapplication.cpp QCoreApplicationPrivate 331
+kernel/qcoreapplication.cpp QCoreApplicationPrivate 346
+kernel/qapplication.cpp QApplicationPrivate 175
+kernel/qapplication.cpp QApplicationPrivate 210
+kernel/qcoreapplication.cpp QCoreApplication 540
+kernel/qcoreapplication.cpp init 603
+kernel/qcoreapplication.cpp init 630
+kernel/qcoreapplication.cpp init 672
+kernel/qcoreapplication.cpp init 676
+kernel/qcoreapplication.cpp QCoreApplication 545
+kernel/qapplication.cpp construct 811
+kernel/qapplication.cpp construct 814
+kernel/qapplication.cpp construct 833
+cp: can't stat '/mnt/app/jsmsgbox_cri/*': No such file or directory
+porting.c[1821]{PORTING_SelectLocalPage} cp /zteui/jsmsgbox /var/js -a
+[get_ini.c:544][set_ini_string]file /var/certus/certus.cfg isn't existed
+QObject::connect: Cannot connect (null)::windowEvent(QWSWindow*,QWSServer::WindowEvent) to QDirectFBScreenPrivate::onWindowEvent(QWSWindow*,QWSServer::WindowEvent)
+QObject::connect: Cannot connect (null)::windowEvent(QWSWindow*,QWSWindow*,QWSServer::WindowEvent) to QDirectFBScreenPrivate::onWindowEventForZorder(QWSWindow*,QWSWindow*,QWSServer::WindowEvent)
+qdirectfbscreen.cpp connect 1126
+qdirectfbscreen.cpp connect 1138
+===========DirectFBInit=========
+DirectFB:fopen(/var/directfbrc) is not null. 
+[dfb_config_init] SYSCONFDIR is /etc 
+(*) DirectFB/Config Set no-layer2-support
+(*) DirectFB/Config Set no-dynamic-insert-fusion-ko
+qdirectfbscreen.cpp connect 1148
+
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~| DirectFB 1.2.7 |~~~~~~~~~~~~~~~~~~~~~~~~~~
+        (c) 2001-2008  The world wide DirectFB Open Source Community
+        (c) 2000-2004  Convergence (integrated media) GmbH
+      ----------------------------------------------------------------
+
+(*) DirectFB/Core: Multi Application Core. (2015-10-27 11:33) 
+MCSP_getsystime: CLKS_PER_SEC=100!
+[tube_ctrl.c:83][TUBE_Ctrl][inf]open dev failed!exit...
+
+(*) Fusion/SHM: Using MADV_REMOVE (2.6.35.0 >= 2.6.19.2)
+(*) Direct/Thread: Started 'Fusion Dispatch' (1075) [MESSAGING FIFO/FIFO 44/44] <8388608>...
+(*) MediaTek/System: system_join: #464
+[5J] system_join -> map memory pool
+[5J] system_join -> map cmdbuf
+mt85AdapterCmdBufGetCmdBuf: u4CmdbufLen = 0xB000
+[5J] system_join -> map debug info
+mc_wrapper.c [3380] MC_SetTimezone:PORTING_SwitchSystemTimeZone return 0
+[get_ini.c:207][get_ini_string]filename /mnt/data/AutoReboot.ini not exist
+(*) DirectFB/Graphics: MediaTek 85xx 1.2 (MediaTek)
+/mnt/app/bin/mainctrl Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received /mnt/app/bin/mainctrl:0
+Module:/mnt/app/bin/mainctrl,Event:[START],TimeStamp,4295958350
+/mnt/app/bin/mainctrl Sending Start Evt done
+ <DEFAULT LOG><LOG /mnt/app/bin/DecMain, ipc_do_op, #2042>pt_sess is NULL
+<DEFAULT LOG><LOG /mnt/app/bin/DecMain, ipc_do_op, #2058>ipc_do_op x_MtkCfg_Hdmi_GetConnectStatus failed ret:-6
+Open client:IMtkCfg_Hdmi_GetConnectStatus #1469 try to auto connect 
+Open Client:mtkcfg
+[RPCIPC]<Client>App(threadID=0x41775460)call ipc_open_client
+[RPCIPC]<Client>create CT socket fd: 18
+[RPCIPC]<Client>create it socket()
+[RPCIPC]<Client>ipc_open_client create IT socket fd: 19
+ct connect()...
+[RPCIPC]<Client>ct connect Server IPC successful
+[RPCIPC]2 add_sess_t():t_id=6,i4_it_sock=24, i4_ct_sock=-1
+[RPCIPC]<Server>alloc t_id =6 @line:1747
+[RPCIPC]IPC Server thread(threadID=0x4e737460:t_id:6)started
+[RPCIPC]<Client> alloc t_id =2
+[RPCIPC]2 add_sess_t():t_id=2,i4_it_sock=19, i4_ct_sock=18
+[RPCIPC]<client>App Thread(0x41775460) create ipc thread-----
+[RPCIPC]IPC client thread started(ThreadID==0x42f76460 :t_id=2)
+[MTKCFG][INFO] MtkLib_Cfg_Hdmi_GetConnectStatus
+[mc_wrapper.c] [8147] [MC_QueryHdmiState]:iHdmiState = 0.
+[mc_evtprocessor.c] [8639] [MC_ChangeTVStandard]:iHDMIState = 0, iAutoOutputFlag = 1.
+
+/mnt/app/bin/mainctrl Sending Start Evt now
+/mnt/app/bin/mainctrl Sending Start Evt done
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received /mnt/app/bin/mainctrl:1
+Module:/mnt/app/bin/mainctrl,Event:[READY],TimeStamp,4295958380
+qdirectfbscreen.cpp connect 1439
+kernel/qapplication.cpp construct 842
+kernel/qapplication.cpp construct 879
+[MC]qtadapter.cpp:52 QT_Init: ===========Qt init pass1===========
+
+MCSP_getsystime: CLKS_PER_SEC=100!
+[MC]qtadapter.cpp:54 QT_Init: ===========Qt init pass2===========
+
+rpc_init is called
+_init_hash(), ui4_tbl_len_order=10, ui4_num=1024
+ipc_init is called, L2813
+ipc_init is called, L2816
+getline,ps_line=/mnt/app/bin/guifacade, read_size=23, z_len=120
+ipc_init is called, L2834
+ipc_init is called, L2839
+ipc_init is called, L2881
+ipc_init is called, pv_key_sess=0x6cfc8, L2891
+ipc_init is called, L2900
+ipc_init is called, L2908
+pt_free = &pt_sess_tbl[1]
+ipc_init is called, L2914
+RPC Inited
+rpcu_tl_log_start is called
+rpcu_tl_log_is_on is called
+REG CB HNDLR x_mtkcfg_nfy_fct, 0x0x4004c40c
+REG CB HNDLR x_mtkcfg_cec_nfy_fct, 0x0x4004c440
+REG CB HNDLR x_mtkcfg_aud_streaminfo_callback, 0x0x4004c474
+[ZTE_HAL][L33]IMtkCfg_Init OK, hCfgHandle: 0xffffffff  
+Open Client:mtkcfg
+[RPCIPC]<Client>App(threadID=0x4135c000)call ipc_open_client
+[RPCIPC]<Client>create CT socket fd: 17
+[RPCIPC]<Client>create it socket()
+[RPCIPC]<Client>ipc_open_client create IT socket fd: 18
+ct connect()...
+[RPCIPC]<Client>ct connect Server IPC successful
+[RPCIPC]<Client>rpcu_os_tls_set()...
+[RPCIPC]<Client>ct sock  send()...
+[RPCIPC]2 add_sess_t():t_id=7,i4_it_sock=26, i4_ct_sock=-1
+[RPCIPC]<Server>alloc t_id =7 @line:1685
+[RPCIPC]IPC Server thread(threadID=0x4ef37460:t_id:7)started
+[RPCIPC]<Client>ct recv()...
+[RPCIPC]<Client> alloc t_id =1
+[RPCIPC]2 add_sess_t():t_id=1,i4_it_sock=18, i4_ct_sock=17
+[RPCIPC]<client>App Thread(0x4135c000) create ipc thread-----
+[RPCIPC]IPC client thread started(ThreadID==0x46bdf460 :t_id=1)
+[MTKCFG][INFO] MtkLib_Cfg_Open
+[SCOM] open name=MTKCFG
+[SCOM] open handle=10612448
+[MTKCFG][INFO] Open CFG Instance successed
+<CFG SERVER>server index 1 register handle: 1
+<CFG CLIENT>x_MtkCfg_Open succeed, t_mtkcfg_client_info[0].h_handle is: 1
+[ZTE_HAL][L36]IMtkCfg_Open OK, hCfgHandle: 0x1  
+[MC]qtadapter.cpp:63 QT_Init: ========Qt init end!===========
+
+/mnt/app/bin/guifacade Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received /mnt/app/bin/guifacade:0
+Module:/mnt/app/bin/guifacade,Event:[START],TimeStamp,4295958460
+/mnt/app/bin/guifacade Sending Start Evt done
+[guifacade.cxx:1961 InitLog]0 times init log return 0
+m_iListEndIndex  1 
+iIndex  1 
+ 
+iTimerID 1
+m_iListEndIndex  2 
+iIndex  2 
+ 
+iTimerID 16777218
+/mnt/app/bin/guifacade Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received /mnt/app/bin/guifacade:1
+Module:/mnt/app/bin/guifacade,Event:[READY],TimeStamp,4295958470
+[STARTER]mcsp_starter.c:733 main: =========Cur Group Start Finished,all Event received=====
+[STARTER]mcsp_starter.c:738 main: Switch to next group
+[STARTER]mcsp_starter.c:704 main: =========Start Current Group===========
+Module:/mnt/app/bin/browser,Event:[LOAD],TimeStamp,4295958480
+Module:/mnt/app/bin/osd_qt,Event:[LOAD],TimeStamp,4295958480
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/osd_qt has no event to wait
+[STARTER]mcsp_starter.c:706 main: =========Cur Group Start Finished,wait app ready Event=====
+[STARTER]mcsp_starter.c:720 main: Wait App Evt...
+/mnt/app/bin/guifacade Sending Start Evt done
+iFindIndex= 2 
+ 
+destroy iTimerID 16777218
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/osd_qt
+======argv[0]=/mnt/app/bin/osd_qt=====
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/browser
+======argv[0]=/mnt/app/bin/browser=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/browser in child process
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/osd_qt in child process
+/mnt/app/bin/sqm Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received /mnt/app/bin/sqm:1
+/mnt/app/bin/sqm Sending Start Evt done
+[PORTNG_SendKerMsg] [/proc/net/monitor] exist, must SendKerMsg.
+[PORTNG_McKerCom][1999]Send message : ztebw ok
+[PORTNG_McKerCom][2003]receive kernel messge now!
+[PORTNG_McKerCom][2013]Received message : reply
+DecClearLogo start 
+<DEFAULT LOG><LOG /mnt/app/bin/DecMain, ipc_do_op, #2042>pt_sess is NULL
+<DEFAULT LOG><LOG /mnt/app/bin/DecMain, ipc_do_op, #2058>ipc_do_op x_MtkCfg_Open failed ret:-6
+Open client:IMtkCfg_Open #262 try to auto connect 
+Open Client:mtkcfg
+[RPCIPC]<Client>App(threadID=0x40f75460)call ipc_open_client
+[RPCIPC]<Client>create CT socket fd: 20
+[RPCIPC]<Client>create it socket()
+[RPCIPC]<Client>ipc_open_client create IT socket fd: 21
+ct connect()...
+[RPCIPC]<Client>ct connect Server IPC successful
+[RPCIPC]2 add_sess_t():t_id=8,i4_it_sock=28, i4_ct_sock=-1
+[RPCIPC]<Server>alloc t_id =8 @line:1747
+[RPCIPC]IPC Server thread(threadID=0x4f737460:t_id:8)started
+[RPCIPC]<Client> alloc t_id =3
+[RPCIPC]2 add_sess_t():t_id=3,i4_it_sock=21, i4_ct_sock=20
+[RPCIPC]<client>App Thread(0x40f75460) create ipc thread-----
+[RPCIPC]IPC client thread started(ThreadID==0x43776460 :t_id=3)
+[MTKCFG][INFO] MtkLib_Cfg_Open
+[SCOM] open name=MTKCFG
+[SCOM] open handle=10612476
+[MTKCFG][INFO] Open CFG Instance successed
+<CFG SERVER>server index 2 register handle: 2
+<CFG CLIENT>x_MtkCfg_Open succeed, t_mtkcfg_client_info[1].h_handle is: 2
+Mtk_set_hdcp 
+[CIPHSV SO] ciphsv_so_init
+[MAIN_Init 630]MAININIT #CYGPS#MAININIT#iGetDecStatus = -1##TimeOut~1second~~## 
+[MAIN_Init 636]bDisplayDecInitFlag = 0, iGetDecStatus = -1 
+
+###############################################################
+#                                                             #
+#                                                             #
+#                    VOD IS RUNING                            #
+#                  CODING IS BORING ........                  #
+#                                                             #
+#                                                             #
+###############################################################
+MCSP_getsystime: CLKS_PER_SEC=100!
+
+
+[main_player.c,663, MAIN_Init] pid 1038 tid 1073881952
+MAIN_Init==4==
+MAIN_Init==5==
+BufMan out:BUfMan inited(in DataBufPoolInit()):ID[0],Get[0],free[8000],Num[8000]!
+BufMan out:BUfMan inited(in DataBufPoolInit()):ID[1],Get[0],free[8000],Num[8000]!
+BufMan out:BUfMan inited(in DataBufPoolInit()):ID[2],Get[0],free[8000],Num[8000]!
+MAIN_Init=6===
+[MCSP_VodInterfaceInit 472]MCSP_VodInterfaceInit in.!
+[McspVodStartMonitor 3428]strCompName=MCSP_Media,strStartScript=,strStopScript=,AliveCycle=60,iPid=1038,iNeedReboot=0,fComMemRate=0.000000
+sectionLen=3, i=0
+sectionLen=3, i=1
+sectionLen=3, i=2
+sectionRdLen=1, i=0
+[McspVodCfgDispRegCallback 3385]MCSP_CfgDisp_RegCallback success
+[McspVodCfgDispRegCallback 3389] UnRegisterKeyListener [TVStandard] iRet = 0 
+[McspVodCfgDispRegCallback 3393] UnRegisterKeyListener [ServiceProvider] iRet = 0 
+[McspVodCfgDispRegMQMCURL 3354] RegisterKeyListener [MQMCURL] iRet = 0 
+[McspVodCfgDispRegUpdateDomain 3347] RegisterKeyListener [UpgradeDomain] iRet = 0 
+[MCSP_VodInterfaceInit 524]MCSP_VodInterfaceInit end.!
+/mnt/app/bin/vplayer Sending Start Evt now
+/mnt/app/bin/vplayer Send Start Evt failed:-1
+[MAIN_GetSTBCfg]To get stbcfg
+[MCSP_VodGetStbConfig 1068]Begin
+[MCSP_VodGetStbConfig 1268]Get KEY_NAME_ZTEMCNDPRE, error ,but has no effect !
+[MCSP_VodGetStbConfig 1274]Get KEY_NAME_ZTEMCNDSUF, error ,but has no effect !
+[MCSP_VodGetStbConfig 1356]Get KEY_NAME_OTTDRMSUPPLIER error ,but has no effect !
+[MCSP_VodGetStbConfig 1358]Get KEY_NAME_OTTDRMSUPPLIER OTTDRMSupplier=0!
+Get KEY_NAME_OTTDRMSUPPLIER OTTDRMSupplier=0!
+[MCSP_VodGetStbConfig 1428]Get KEY_NAME_DHCP125MODE error ,but has no effect !
+[MCSP_VodGetStbConfig 1460]Get KEY_NAME_MOCASUPPLIER error ,but has no effect !
+[MCSP_VodGetStbConfig 1492]Get KEY_NAME_SWITCHSUPPLIER error ,but has no effect !
+[MCSP_VodGetStbConfig 1535]Get KEY_NAME_OPTION60TP error ,but has no effect !
+[MCSP_VodGetStbConfig 1643]Get KEY_NAME_MACADDR2 error ,but has no effect !
+[MCSP_VodGetStbConfig 1650]Get KEY_NAME_MANUFACTUREFLAG error ,but has no effect !
+[MCSP_VodGetStbConfig 1770]Get KEY_NAME_HAIERDOWNLOADSERVER error ,but has no effect !
+[MCSP_VodGetStbConfig 1777]Get KEY_NAME_TVMSDOMAIN error ,but has no effect !
+[MCSP_VodGetStbConfig 1792]Get KEY_NAME_KEYLEARN error ,but has no effect !
+[MCSP_VodGetStbConfig 1822]Get KEY_NAME_SDSTANDARD error ,but has no effect !
+[MCSP_VodGetStbConfig 1830]Get KEY_NAME_HDSTANDARD error ,but has no effect !
+[MCSP_VodGetStbConfig 1838]Get KEY_NAME_VALIDBANDWIDTHRATE error ,but has no effect !
+[MCSP_VodGetStbConfig 1854]Get KEY_NAME_DOUBLEAUTHFLAG error ,but has no effect !
+[MCSP_VodGetStbConfig 1861]Get KEY_NAME_VASSUPPLIER error ,but has no effect !
+[McspVodGetVmDrmCfg 824]Get drm cfg in.!
+VOD:Recv BW Data, stbcfg
+VOD:Recv BW Data,cmd=VM_CFG!
+VOD:Recv BW Data,cmd=VM_CFG!
+[MCSP_VodGetStbConfig 1900]End
+[MCSP_VodGetStbConfigExt 1923] Get Stb Config Ext Begin
+[MCSP_VodGetStbConfigExt 1936]Get KEY_NAME_RECFEC error ,but has no effect !
+[MCSP_VodGetStbConfigExt 1942]Get KEY_NAME_DUPLEXMODE error ,but has no effect !
+[MCSP_VodGetStbConfigExt 1949]Get KEY_NAME_HLS_LiveStartNO error ,but has no effect !
+[MCSP_VodGetStbConfigExt 1954]Get KEY_NAME_SUPPORTSUBT SupportSubt=0 !
+[MCSP_VodGetStbConfigExt 1957]Get KEY_NAME_SUPPORTSUBT error ,but has no effect !
+VOD:Recv BW Data, stbcfg
+[MCSP_VodGetStbConfigExt 1961] Get Stb Config Ext End
+###################### VOD_CAPACITY_SET_RESP = 2021    #####################.
+[CIPHSV SO] success to insert ciphsv.ko into system, ret=0 
+[CIPHSV SO] success to open ciphsv device
+Mtk_set_hdcp IMtkCfg_Hdmi_Set_Hdcp_Onoff true
+[MTKCFG][INFO] MtkLib_Cfg_Hdmi_Set_Hdcp_Onoff. fgOnoff = 1
+[CIPHSV SO] ciphsv_so_uninit 
+[CIPHSV SO] sem_unlink successful.
+Mtk_set_hdcp end ret 0
+[MTKCFG][INFO] MtkLib_Cfg_OSD_HideBootLogo
+HideBootLogo OK 
+[MTKCFG][INFO] MtkLib_Cfg_OSD_SetDisplayRectangle. u4X=53, u4Y=36, u4Width=894, u4Height=927
+[MTKCFG][INFO] MtkLib_Cfg_Close
+[scom] close handle = 10612476
+[scom] MTKCFG closed
+[scom] pt_scom_cb.fg_opened= 0
+<CFG CLIENT> Release Number[1] cfg client
+DecClearLogo end ret 0
+[MAIN_GetSTBCfg]Get stbcfg over
+[MCSP_VodSetXmlConfig 1987]MCSP_VodSetXmlConfig #CYGPS#TVStandard = 1 
+[PORTING_LedCtrl][1582] iType = 162,  iLedCtrl = 1, iParam0 = 3, iParam1 = 0
+[set_v4h_led_on:637] "led_flag=1,pld->fd_green=13,pld->fd_red=14"
+[set_v4h_led_double_on:621] "ret=0\n"
+[PORTING_LedCtrl][1582] iType = 162,  iLedCtrl = 3, iParam0 = 41, iParam1 = 0
+[set_v4h_led_on:637] "led_flag=1,pld->fd_green=13,pld->fd_red=14"
+[set_v4h_led_double_on:621] "ret=0\n"
+[PORTING_LedCtrl][1582] iType = 162,  iLedCtrl = 1, iParam0 = 6, iParam1 = 0
+[set_v4h_led_on:637] "led_flag=1,pld->fd_green=13,pld->fd_red=14"
+[set_v4h_led_double_on:621] "ret=0\n"
+[get_ini.c:207][get_ini_string]filename /etc/mc.ini not exist
+[main.cpp:1629][main] dbg Osd is running!
+
+
+************************************************************
+*    ZTESC Inited and version [ZTESC:V1.04 2011-07-04]             *
+************************************************************
+
+
+kernel/qcoreapplication.cpp QCoreApplicationPrivate 331
+kernel/qcoreapplication.cpp QCoreApplicationPrivate 346
+kernel/qapplication.cpp QApplicationPrivate 175
+kernel/qapplication.cpp QApplicationPrivate 210
+kernel/qcoreapplication.cpp QCoreApplication 540
+kernel/qcoreapplication.cpp init 603
+kernel/qcoreapplication.cpp init 630
+kernel/qcoreapplication.cpp init 672
+kernel/qcoreapplication.cpp init 676
+kernel/qcoreapplication.cpp QCoreApplication 545
+kernel/qapplication.cpp construct 811
+kernel/qapplication.cpp construct 814
+kernel/qapplication.cpp construct 833
+Warning: Executing wildcard deletion to stay compatible with old scripts.
+         Explicitly specify the prefix length (192.168.1.12/32) to avoid this warning.
+         This special behaviour is likely to disappear in further releases,
+         fix your scripts!
+[NetState][OnNetFail][7974] iType = 0
+[PORTING_LedCtrl][1582] iType = 162,  iLedCtrl = 4, iParam0 = 63, iParam1 = 0
+[set_v4h_led_on:637] "led_flag=1,pld->fd_green=16,pld->fd_red=17"
+[set_v4h_led_double_on:621] "ret=0\n"
+mc_evtprocessor.c [8006] OnNetFail:Start net fail, result = 118.
+ s_uiTcpTimeOut: 5
+[tube_ctrl.c:83][TUBE_Ctrl][inf]open dev failed!exit...
+
+QObject::connect: Cannot connect (null)::windowEvent(QWSWindow*,QWSServer::WindowEvent) to QDirectFBScreenPrivate::onWindowEvent(QWSWindow*,QWSServer::WindowEvent)
+QObject::connect: Cannot connect (null)::windowEvent(QWSWindow*,QWSWindow*,QWSServer::WindowEvent) to QDirectFBScreenPrivate::onWindowEventForZorder(QWSWindow*,QWSWindow*,QWSServer::WindowEvent)
+qdirectfbscreen.cpp connect 1126
+qdirectfbscreen.cpp connect 1138
+===========DirectFBInit=========
+DirectFB:fopen(/var/directfbrc) is not null. 
+GetCfgValue() return -1 because no find defaultLostDelay= 
+[GetCfgValue 620]GetCfgValue() return -1 because no find defaultLostDelay= 
+GetCfgValue() return -1 because no find defaultLostDelay= 
+[GetCfgValue 620]GetCfgValue() return -1 because no find defaultLostDelay= 
+GetCfgValue() return -1 because no find defaultLostDelay= 
+[GetCfgValue 620]GetCfgValue() return -1 because no find defaultLostDelay= 
+GetCfgValue() return -1 because no find defaultLostDelay= 
+[GetCfgValue 620]GetCfgValue() return -1 because no find defaultLostDelay= 
+GetCfgValue() return -1 because no find defaultLostDelay= 
+[GetCfgValue 620]GetCfgValue() return -1 because no find defaultLostDelay= 
+GetCfgValue() return -1 because no find defaultLostDelay= 
+[GetCfgValue 620]GetCfgValue() return -1 because no find defaultLostDelay= 
+GetCfgValue() return -1 because no find defaultLostDelay= 
+[GetCfgValue 620]GetCfgValue() return -1 because no find defaultLostDelay= 
+GetCfgValue() return -1 because no find defaultLostDelay= 
+[GetCfgValue 620]GetCfgValue() return -1 because no find defaultLostDelay= 
+GetCfgValue() return -1 because no find defaultLostDelay= 
+[GetCfgValue 620]GetCfgValue() return -1 because no find defaultLostDelay= 
+MP:InitVPlayer() now4....
+[Mcsp_VodGetVlanCfg 947]Get KEY_NAME_VLAN_ID_OTHER error, but has no effect !
+[Mcsp_VodGetVlanCfg 954]Get KEY_NAME_VLAN_ID_DHCP error, but has no effect !
+[Mcsp_VodGetVlanCfg 961]Get KEY_NAME_VLAN_ID_UNICAST error, but has no effect !
+[Mcsp_VodGetVlanCfg 968]Get KEY_NAME_VLAN_ID_MULTICAST error, but has no effect !
+[Mcsp_VodGetVlanCfg 975]Get KEY_NAME_VLAN_ID_APPUP error, but has no effect !
+[dfb_config_init] SYSCONFDIR is /etc 
+(*) DirectFB/Config Set no-layer2-support
+(*) DirectFB/Config Set no-dynamic-insert-fusion-ko
+qdirectfbscreen.cpp connect 1148
+
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~| DirectFB 1.2.7 |~~~~~~~~~~~~~~~~~~~~~~~~~~
+        (c) 2001-2008  The world wide DirectFB Open Source Community
+        (c) 2000-2004  Convergence (integrated media) GmbH
+      ----------------------------------------------------------------
+
+(*) DirectFB/Core: Multi Application Core. (2015-10-27 11:33) 
+[Mcsp_VodGetVlanCfg 982]Get KEY_NAME_VLAN_ID_TR069 error, but has no effect !
+[Mcsp_VodGetVlanCfg 989]Get KEY_NAME_VLAN_ID_DRM error, but has no effect !
+[Mcsp_VodGetVlanCfg 996]Get KEY_NAME_VLAN_PBIT_OTHER error, but has no effect !
+[Mcsp_VodGetVlanCfg 1003]Get KEY_NAME_VLAN_PBIT_DHCP error, but has no effect !
+[Mcsp_VodGetVlanCfg 1010]Get KEY_NAME_VLAN_PBIT_UNICAST error, but has no effect !
+[Mcsp_VodGetVlanCfg 1017]Get KEY_NAME_VLAN_PBIT_MULTICAST error, but has no effect !
+[Mcsp_VodGetVlanCfg 1024]Get KEY_NAME_VLAN_PBIT_APPUP error, but has no effect !
+[Mcsp_VodGetVlanCfg 1031]Get KEY_NAME_VLAN_PBIT_TR069 error, but has no effect !
+[Mcsp_VodGetVlanCfg 1038]Get KEY_NAME_VLAN_PBIT_DRM error, but has no effect !
+[VodLogInit 441]Log init success
+[BrowserInit 518]MCSP_Browser not ready, so wait notify.##########TR069MsgInit suc
+[MAIN_Init 722]MCSP_VodInterfaceInit success
+/mnt/app/bin/vplayer Sending Start Evt now
+/mnt/app/bin/vplayer Send Start Evt failed:-1
+(*) Fusion/SHM: Using MADV_REMOVE (2.6.35.0 >= 2.6.19.2)
+[MAIN_Init 760]VOD init done!!!
+######################enter main loop###########################
+(*) Direct/Thread: Started 'Fusion Dispatch' (1100) [MESSAGING FIFO/FIFO 44/44] <8388608>...
+(*) MediaTek/System: system_join: #464
+[5J] system_join -> map memory pool
+[5J] system_join -> map cmdbuf
+mt85AdapterCmdBufGetCmdBuf: u4CmdbufLen = 0xB000
+[5J] system_join -> map debug info
+(*) DirectFB/Graphics: MediaTek 85xx 1.2 (MediaTek)
+qdirectfbscreen.cpp connect 1439
+kernel/qapplication.cpp construct 842
+kernel/qapplication.cpp construct 879
+(*) Direct/Interface: Loaded 'PNG' implementation of 'IDirectFBImageProvider'.
+[DirectFB][Image decode][PNG] Decoding size:108 x 72 with SW
+[DirectFB][Image decode][PNG] Decode time is 11 ms
+invokeSetAltitude: changingw wintype is 11
+[MC]qtadapter.cpp:648 closeMessage: Enter
+getStrByID    msginfo  langID=11 
+getStrByID    msginfo  langID=11 
+getStrByID    msginfo  langID=11 
+MessageBox::m_nMsgId[101] show
+[MC]qtadapter.cpp:410 showMessage: ENTER
+(#) DirectFBError [QDirectFBPixmapData::fromDataBufferDescription(): Can't create image provider]: No (suitable) implementation found!
+MessageBox::setFont size: 20
+[MC]qtadapter.cpp:603 showMessage: !@@###before show
+cmd object name
+"GuiFacade_0x5f1d8" 
+false 
+[MC]qtadapter.cpp:605 showMessage: !@@###after show
+paintEvent enter m_nMsgId = 101
+prev focus window: 0x34c90 
+after setZorder, focus window: 0x34c90 
+paintEvent enter m_nMsgId = 101
+[MC]qtadapter.cpp:648 closeMessage: Enter
+MessageBox::m_nMsgId[101] hide
+@@@@@@@@@@@@@@ Browser process beginning @@@@@@@@@@@@@@
+BrsInterface/BrsInterface.cpp ztebw_create_BrsAppInst begin...
+kernel/qcoreapplication.cpp QCoreApplicationPrivate 331
+kernel/qcoreapplication.cpp QCoreApplicationPrivate 346
+kernel/qapplication.cpp QApplicationPrivate 175
+kernel/qapplication.cpp QApplicationPrivate 210
+kernel/qcoreapplication.cpp QCoreApplication 540
+kernel/qcoreapplication.cpp init 603
+kernel/qcoreapplication.cpp init 630
+kernel/qcoreapplication.cpp init 672
+kernel/qcoreapplication.cpp init 676
+kernel/qcoreapplication.cpp QCoreApplication 545
+kernel/qapplication.cpp construct 811
+kernel/qapplication.cpp construct 814
+kernel/qapplication.cpp construct 833
+QObject::connect: Cannot connect (null)::windowEvent(QWSWindow*,QWSServer::WindowEvent) to QDirectFBScreenPrivate::onWindowEvent(QWSWindow*,QWSServer::WindowEvent)
+QObject::connect: Cannot connect (null)::windowEvent(QWSWindow*,QWSWindow*,QWSServer::WindowEvent) to QDirectFBScreenPrivate::onWindowEventForZorder(QWSWindow*,QWSWindow*,QWSServer::WindowEvent)
+qdirectfbscreen.cpp connect 1126
+qdirectfbscreen.cpp connect 1138
+===========DirectFBInit=========
+DirectFB:fopen(/var/directfbrc) is not null. 
+[dfb_config_init] SYSCONFDIR is /etc 
+(*) DirectFB/Config Set no-layer2-support
+(*) DirectFB/Config Set no-dynamic-insert-fusion-ko
+qdirectfbscreen.cpp connect 1148
+
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~| DirectFB 1.2.7 |~~~~~~~~~~~~~~~~~~~~~~~~~~
+        (c) 2001-2008  The world wide DirectFB Open Source Community
+        (c) 2000-2004  Convergence (integrated media) GmbH
+      ----------------------------------------------------------------
+
+(*) DirectFB/Core: Multi Application Core. (2015-10-27 11:33) 
+(*) Fusion/SHM: Using MADV_REMOVE (2.6.35.0 >= 2.6.19.2)
+(*) Direct/Thread: Started 'Fusion Dispatch' (1102) [MESSAGING FIFO/FIFO 44/44] <8388608>...
+(*) MediaTek/System: system_join: #464
+[5J] system_join -> map memory pool
+[5J] system_join -> map cmdbuf
+mt85AdapterCmdBufGetCmdBuf: u4CmdbufLen = 0xB000
+[5J] system_join -> map debug info
+(*) DirectFB/Graphics: MediaTek 85xx 1.2 (MediaTek)
+qdirectfbscreen.cpp connect 1439
+kernel/qapplication.cpp construct 842
+kernel/qapplication.cpp construct 879
+BrsInterface/BrsInterface.cpp ztebw_create_BrsAppInst end...
+browser Sending Start Evt now
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received browser:0
+Module:/mnt/app/bin/browser,Event:[START],TimeStamp,4295962350
+browser Sending Start Evt done
+@@@@@@@@@@@@szReply:{'type':0,'szLogoUrl':'','iLogoWidth':644,'iLogoHeight':534,'istyle':2,'iOrder':480}
+[webkit]: 1 segment logo ceated, no need create logo window!
+[webkit]: iptv main winow iWidth=644, iHeight=534
+BrsInterface/BrsInterface.cpp ztebw_create begin...
+[webkit]:Installed signal for webdump:12
+[webkit]:set the image hardware decoder parms:format:jpeg;size:1920x1080!
+!The debug msg throw net.
+[WebKit] : +++++++++ OPEN config file /etc/paintPatch failed !
+[WebKit] : +++++++++ OPEN config file /etc/set failed !
+[webkit]:the parms (speed 1 width 1 height 1  fireupdate 3)
+[webkit]:Loader,maxRequestsInFlightPerHost:36
+autosaver.cpp AutoSaver begin 
+autosaver.cpp AutoSaver end 
+webview.cpp WebView begin 
+webview.cpp WebView end 
+!setWindowType, windowType=[0]
+Object::connect: No such signal WebPage::signalsetHeartBeatWindowStyleType(bool)
+[webkit]:create a new window:0x39098
+setWindowLevel, winLevel =[20000000]
+[webkit] this widow receive a resize event w:640,h:480!
+cmd object name
+"Webkit_0x39098" 
+false 
+browser mainWindow created, BrowserMainWindow(0x39098, name = "Webkit_0x39098") ,handle= 233624 
+prev focus window: 0x45bb0 
+after setZorder, focus window: 0x45bb0 
+[webkit] this widow receive a resize event w:644,h:534!
+cmd object name
+"Webkit_0x39098" 
+false 
+webkit browser private info:
+	AppName:	[ztebw(Chrome)]
+	AppProduct:	[B700-V2A]
+	AppVersion:	[1.2.0]
+	Vendor:	[ZTE]
+	cpuClass:	[MTK8653]
+	Compile Time:	[Oct 27 2015 20:02:00]
+BrsInterface/BrsInterface.cpp ztebw_create end...
+[webkit]: argc:1 argv[0]:/mnt/app/bin/browser
+browser Sending Start Evt now
+browser Sending Start Evt done
+[STARTER]mcsp_starter.c:544 ServerEventCallBack: Starter Event Received browser:1
+Module:/mnt/app/bin/browser,Event:[READY],TimeStamp,4295962650
+[STARTER]mcsp_starter.c:733 main: =========Cur Group Start Finished,all Event received=====
+[STARTER]mcsp_starter.c:738 main: Switch to next group
+[STARTER]mcsp_starter.c:704 main: =========Start Current Group===========
+Module:/mnt/data/vpms/start_vpms.sh,Event:[LOAD],TimeStamp,4295962650
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/data/vpms/start_vpms.sh has no event to wait
+Module:/mnt/data/qcs/start_iptv.sh,Event:[LOAD],TimeStamp,4295962650
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/data/qcs/start_iptv.sh has no event to wait
+Module:/mnt/app/bin/start_cloudGame.sh,Event:[LOAD],TimeStamp,4295962650
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/start_cloudGame.sh has no event to wait
+Module:msleep 30000,Event:[LOAD],TimeStamp,4295962650
+[STARTER]mcsp_starter.c:325 msleep: msleep found
+[STARTER]mcsp_starter.c:343 msleep: msleep 30000 microseconds
+[BrowserInit 541]Browser init success
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/start_cloudGame.sh
+======argv[0]=/mnt/app/bin/start_cloudGame.sh=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/start_cloudGame.sh in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/data/qcs/start_iptv.sh
+======argv[0]=/mnt/data/qcs/start_iptv.sh=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/data/qcs/start_iptv.sh in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/data/vpms/start_vpms.sh
+======argv[0]=/mnt/data/vpms/start_vpms.sh=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/data/vpms/start_vpms.sh in child process
+WebPage::event. FocusIn, page=[0x1af58],win=[0x39098]
+prev focus window: 0x45bb0 
+after setZorder, focus window: 0x45bb0 
+Now LD_LIBRARY_PATH=:/usr/local/lib:/mnt/app/lib/qt/lib:/usr/local/lib:/lib:/mnt/app/lib:/mnt/data/qcs/lib
+[InitMarket][48]:iMarket = 31[OperatorsCode = 1, szMarketCode = 3601]
+[ZCUI_Mcsp_Init][105]:succ.
+
+BrsInterface/BrsInterface.cpp ztebw_install_protocol begin...
+BrsInterface/BrsInterface.cpp ztebw_install_protocol end...
+BrsInterface/BrsInterface.cpp ztebw_install_suffix begin...
+BrsInterface/BrsInterface.cpp ztebw_install_suffix end...
+BrsInterface/BrsInterface.cpp ztebw_create begin...
+[webkit]: set main window <0x39098:233624> pos <0,0,644,534> 
+[webkit]:zebra_market_patch : Get market code 3601, provider id 1
+cfgexport-info: signalInit for mcsp_cfgexport, PID=1111!
+cfgexport: output file is: /var/Cloudcfgtmp
+BrsInterface/BrsInterface.cpp ztebw_open_url begin...
+=====cfgexport-info: cfgms is alive, transport online=====
+cfgexport-info: ========export config success!========
+
+[webkit]: getAcceptLanguage=id
+ [webkit]: ztebw_open_url, mainHandle<0x39098:233624>,handle<0x39098:233624>, url<file:///zteui/help.htm?errorno=1901> , visible<1>
+[WebKit] Load URL====>file:///zteui/help.htm?errorno=1901
+cfgexport-info: signalInit for mcsp_cfgexport, PID=1115!
+cfgexport: output file is: /var/cfgtmp
+=====cfgexport-info: cfgms is alive, transport online=====
+cfgexport-info: ========export config success!========
+
+sh: bad number
+BrsInterface/BrsInterface.cpp ztebw_open_url end...
+/mnt/data/qcs/iptv/tvclient APPPID= APPSTAT=
+ Starting tvclient... 
+[mc_infoCfg.c] [6838] [MC_InfoCfg_Write]:SetEpgMode,value=SD, iResolution:1
+[mc_wrapper.c] [3086] [MC_SwitchIPTVAndLP]:iResolution:1,iMode=0,current logo state is 1, current resolution is 1.
+BrsInterface/BrsInterface.cpp ztebw_show begin...
+BrsInterface/BrsInterface.cpp ztebw_show end...
+/mnt/data/logout is not exist!!!
+(*) Direct/Interface: Loaded 'JPEG' implementation of 'IDirectFBImageProvider'.
+[DFBCheck_ImageSize]11 width:640
+[DFBCheck_ImageSize]22 height:530
+Enter1 Construct--478, iWidth/iHeight[640:530] 
+Enter2 Construct--491,data->widt/height[640:530] 
+Enter3 Construct--493,data->image_width/height[640:530] 
+[DirectFB][Image decode][JPEG] Decoding size:640 x 530 with HW
+[LIBJPEG] ----------HW decoding Successfully
+[DirectFB][Image decode][JPEG] Decode time is 47 ms
+(*) Direct/Interface: Loaded 'PNG' implementation of 'IDirectFBImageProvider'.
+[DirectFB][Image decode][PNG] Decoding size:108 x 21 with SW
+[DirectFB][Image decode][PNG] Decode time is 6 ms
+MCSP_getsystime: CLKS_PER_SEC=100!
+Module:TV_Client,Event:[START],TimeStamp:<4295965300>
+Module:TV_Client,Event:[Init Start],TimeStamp:<4295965310>
+tvclient init MCSP_STOP_PROC_EVT Successful
+fopen file success!
+buf:644 534
+buf:befa42d0,p:befa42d3
+Width:644,buf:644 534
+Higth:534,buf:644 534
+---PAL:644*534---
+(*) Direct/Interface: Using 'JPEG' implementation of 'IDirectFBImageProvider'.
+[DFBCheck_ImageSize]11 width:1920
+[DFBCheck_ImageSize]22 height:1080
+Enter1 Construct--478, iWidth/iHeight[1920:1080] 
+Enter2 Construct--491,data->widt/height[1920:1080] 
+Enter3 Construct--493,data->image_width/height[1920:1080] 
+[DirectFB][Image decode][JPEG] Decoding size:1920 x 1080 with HW
+Module:TV_Client,Event:[READY],TimeStamp:<4295965770>
+[LIBJPEG] ----------HW decoding Successfully
+[DirectFB][Image decode][JPEG] Decode time is 186 ms
+(#) DirectFBError [QDirectFBPixmapData::fromDataBufferDescription(): Can't create image provider]: No (suitable) implementation found!
+(#) DirectFBError [QDirectFBPixmapData::fromDataBufferDescription(): Can't create image provider]: No (suitable) implementation found!
+(#) DirectFBError [QDirectFBPixmapData::fromDataBufferDescription(): Can't create image provider]: No (suitable) implementation found!
+(#) DirectFBError [QDirectFBPixmapData::fromDataBufferDescription(): Can't create image provider]: No (suitable) implementation found!
+(#) DirectFBError [QDirectFBPixmapData::fromDataBufferDescription(): Can't create image provider]: No (suitable) implementation found!
+(#) DirectFBError [QDirectFBPixmapData::fromDataBufferDescription(): Can't create image provider]: No (suitable) implementation found!
+[DirectFB][Image decode][PNG] Decoding size:63 x 45 with SW
+[DirectFB][Image decode][PNG] Decode time is 5 ms
+(#) DirectFBError [QDirectFBPixmapData::fromDataBufferDescription(): Can't create image provider]: No (suitable) implementation found!
+(#) DirectFBError [QDirectFBPixmapData::fromDataBufferDescription(): Can't create image provider]: No (suitable) implementation found!
+[scom](AVD-->SCOM)scom_avd_nfy ,e_nfy_cond=AVD_EDID_READY_OK
+[SCOM] avd:0, ret=0
+[MTKCFG][INFO] [MtkCfg_Scom_Nfy_Fct]hCfgHandle:0, h_screen:10612364, e_nfy_cond:66, ui4_data:0x2 
+[acfg -> Victor]SCOM e_nfy_cond = 66
+<ACFG> a_cfg_get_scom_for_set call _get_scom_for_set 14650
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13667:-1
+_acfg_hdmi_pri_output_ntsc_output is called
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<ACFG> a_cfg_get_2dto3d_type(), value : 0
+<ACFG_GRP_TV>_acfg_hdmi_pri_output_ntsc_cav_output() is called ui1_resolution = 0
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+[PLAYBACK] b_hdmi_connected is 1, ui1_resolution is 0
+[PLAYBACK]a_pb_cav_output_should_down_sample return FALSE line 680
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<ACFG>_acfg_hdmi_pri_output_ntsc_hdmi_output() is called
+<ACFG>CONFIG_APP_CHIP_8580 = 0 
+ <ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<ACFG> a_cfg_get_2dto3d_type(), value : 0
+<ACFG>u1_2d_to_3d_type: 0
+<ACFG>get ui1_resolution: 0
+e_support_resolution is: 13 
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13667:-1
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13353:-1
+<Playback>u4OSDPlane5Flag is 2
+[PLAYBACK] b_hdmi_connected is 1, u4_pb_OSDPlane5Flag is 2 line 780
+<PLAYBACK>a_pb_osd5_is_shown is TRUE line 801
+{ACFG}INFO: ACFG_HD_FLAG  b_is_OSD5Enable = 1 L8580
+{ACFG}INFO: hdmi_output = 1 L=8852
+{ACFG}INFO: hdmi_output width = 1920 
+{ACFG}INFO: hdmi_output height = 1080 
+{ACFG}INFO: hdmi_output progressive = 1 
+{ACFG}INFO: hdmi_output e_new_v_freq = 0 
+
+{ACFG}INFO: hdmi_output freq = 60 
+
+<PB>receive hdmi hot plug msg osd5 is 1
+<PB>receive hdmi plug in msg osd5 is 1
+{GRAPHIC} ERR: GLR_INV_HANDLE (-2) at L875
+
+{GRAPHIC} ERR: i4_ret (-2) at L908
+
+<PB>NO_CONCURRENT_ANALOG on
+{GRAPHIC} ERR: GLR_INV_HANDLE (-2) at L5173
+
+{GRAPHIC} ERR: GLR_INV_HANDLE (-2) at L875
+
+{GRAPHIC} ERR: i4_ret (-2) at L844
+
+<PLAYBACK> ERR: file = src/application/playback/playback_center.c, line = 798, reason = -2
+{GRAPHIC} ERR: GLR_INV_HANDLE (-2) at L875
+
+{GRAPHIC} ERR: i4_ret (-2) at L722
+
+[MTKCFG][INFO] MtkLib_Cfg_Vid_SetResolution. eResolution=5
+[SCOM_API]set user format description_ex
+[scom](TVE-->SCOM)scom_tve_nfy ,cond=TVE_CAV_OUT_RES_UPDATED,info=0x9
+[SCOM] rm_ret=0
+[SCOM] rm_ret=0
+[SCOM] rm_ret=0
+[MTKCFG][INFO] MtkLib_Cfg_OSD_SetDisplayRectangle. u4X=11, u4Y=19, u4Width=978, u4Height=961
+[MTKCFG][INFO] [MtkCfg_Scom_Nfy_Fct]hCfgHandle:1, h_screen:10612448, e_nfy_cond:66, ui4_data:0x2 
+[MTKCFG][INFO] [MtkCfg_Scom_Nfy_Fct]hCfgHandle:0, h_screen:10612364, e_nfy_cond:6, ui4_data:0x9 
+[MTKCFG][INFO] [MtkCfg_Scom_Nfy_Fct]hCfgHandle:1, h_screen:10612448, e_nfy_cond:6, ui4_data:0x9 
+[MTKCFG][INFO] [MtkCfg_Scom_Nfy_Fct]hCfgHandle:0, h_screen:10612364, e_nfy_cond:24, ui4_data:0x0 
+[MTKCFG][INFO] [MtkCfg_Scom_Nfy_Fct]hCfgHandle:1, h_screen:10612448, e_nfy_cond:24, ui4_data:0x0 
+[MTKCFG][INFO] [MtkCfg_Scom_Nfy_Fct]hCfgHandle:0, h_screen:10612364, e_nfy_cond:23, ui4_data:0x0 
+[MTKCFG][INFO] [MtkCfg_Scom_Nfy_Fct]hCfgHandle:1, h_screen:10612448, e_nfy_cond:23, ui4_data:0x0 
+<Playback> _playback_scom_nfy,ui2_width 1280, b_is_progressive 1, ui2_v_freq 50, b_is_3d_mode 0
+<ACFG> a_get_partition_id_by_name fail:src/application/app_util/config/acfg_grp_tv.c:13667:-1
+<Playback> _playback_scom_nfy,get tv system return -1
+[acfg -> Victor]SCOM e_nfy_cond = 6
+[acfg -> Victor]SCOM e_nfy_cond = 24
+[acfg -> Victor]SCOM e_nfy_cond = 23
+[mc_evtprocessor.c] [8820] [OnVodHDMIState]:<@@@@@@@@-----> get iHDMIState=1.
+
+[mc_evtprocessor.c] [8639] [MC_ChangeTVStandard]:iHDMIState = 1, iAutoOutputFlag = 1.
+
+[mc_evtprocessor.c] [8731] [MC_ChangeTVStandard]:TVStandard  1, new TVStandard = 4.
+
+Evt_Cfg_State.szSection = Common, Evt_Cfg_State.szKeyName = TVStandard
+Evt_Cfg_State.keyValue = 4, Evt_Cfg_State.iValLen = 1
+[mc_infoCfg.c] [2444] [MC_SetMwSize]:=======14=14=1252=692==========
+
+[Page_WriteMWParams] iLeft=14 , iTop =14, iWidth =1252, iHeight =692,EpgWidth =644,EpgHeight = 534
+[scom](AVD-->SCOM)scom_avd_nfy ,e_nfy_cond=AVD_NOTIFY_CHG_VIDEO_RES_OK
+{PBMG}ERR: pb engine idx error,at L1469
+[MTKCFG][INFO] [MtkCfg_Scom_Nfy_Fct]hCfgHandle:0, h_screen:10612364, e_nfy_cond:63, ui4_data:0x0 
+[MTKCFG][INFO] [MtkCfg_Scom_Nfy_Fct]hCfgHandle:1, h_screen:10612448, e_nfy_cond:63, ui4_data:0x0 
+[acfg -> Victor]SCOM e_nfy_cond = 63
+[STARTER]mcsp_starter.c:345 msleep: msleep done
+Module:/mnt/data/stvms/start_tvmsclient.sh,Event:[LOAD],TimeStamp,4295992670
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/data/stvms/start_tvmsclient.sh has no event to wait
+[STARTER]mcsp_starter.c:706 main: =========Cur Group Start Finished,wait app ready Event=====
+[STARTER]mcsp_starter.c:711 main: All app in cur group is ready,no need to wait
+[STARTER]mcsp_starter.c:738 main: Switch to next group
+[STARTER]mcsp_starter.c:704 main: =========Start Current Group===========
+Module:/mnt/app/bin/stbcfg remote,Event:[LOAD],TimeStamp,4295992670
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/stbcfg remote has no event to wait
+Module:/mnt/app/bin/diskmanager,Event:[LOAD],TimeStamp,4295992670
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/diskmanager has no event to wait
+Module:/mnt/app/bin/localmediaserver,Event:[LOAD],TimeStamp,4295992670
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/localmediaserver has no event to wait
+Module:/mnt/app/bin/hw_test_manager,Event:[LOAD],TimeStamp,4295992680
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/data/stvms/start_tvmsclient.sh
+======argv[0]=/mnt/data/stvms/start_tvmsclient.sh=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/data/stvms/start_tvmsclient.sh in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/stbcfg remote
+======argv[0]=/mnt/app/bin/stbcfg=====
+======argv[1]=remote=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/stbcfg in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/diskmanager
+======argv[0]=/mnt/app/bin/diskmanager=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/diskmanager in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/localmediaserver
+======argv[0]=/mnt/app/bin/localmediaserver=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/localmediaserver in child process
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/hw_test_manager has no event to wait
+Module:/mnt/app/bin/javawatch,Event:[LOAD],TimeStamp,4295992690
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/hw_test_manager
+======argv[0]=/mnt/app/bin/hw_test_manager=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/hw_test_manager in child process
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/javawatch has no event to wait
+Module:/mnt/app/bin/mscagent,Event:[LOAD],TimeStamp,4295992700
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/mscagent has no event to wait
+Module:/mnt/app/bin/dlnamanager,Event:[LOAD],TimeStamp,4295992700
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/javawatch
+======argv[0]=/mnt/app/bin/javawatch=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/javawatch in child process
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/dlnamanager has no event to wait
+Module:/mnt/app/bin/autotest,Event:[LOAD],TimeStamp,4295992710
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/mscagent
+======argv[0]=/mnt/app/bin/mscagent=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/mscagent in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/dlnamanager
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/autotest has no event to wait
+Module:/mnt/app/bin/start_localplay.sh,Event:[LOAD],TimeStamp,4295992720
+======argv[0]=/mnt/app/bin/dlnamanager=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/dlnamanager in child process
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/autotest
+======argv[0]=/mnt/app/bin/autotest=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/autotest in child process
+[STARTER]mcsp_starter.c:450 StartApp: /mnt/app/bin/start_localplay.sh has no event to wait
+[STARTER]mcsp_starter.c:706 main: =========Cur Group Start Finished,wait app ready Event=====
+[STARTER]mcsp_starter.c:711 main: All app in cur group is ready,no need to wait
+[STARTER]mcsp_starter.c:738 main: Switch to next group
+[STARTER]mcsp_starter.c:742 main: Start App done
+[STARTER]mcsp_starter.c:358 execOneApp: /mnt/app/bin/start_localplay.sh
+======argv[0]=/mnt/app/bin/start_localplay.sh=====
+[STARTER]mcsp_starter.c:390 execOneApp: Start /mnt/app/bin/start_localplay.sh in child process
+to receive CMD
+Now LD_LIBRARY_PATH=:/usr/local/lib:/mnt/app/lib/qt/lib:/usr/local/lib:/lib:/mnt/app/lib:/mnt/data/qcs/lib
+diskmanager.c:[main][4373]:------------Start Diskmanager------------
+
+main [968]:main, 968, --------------MCSP_EVTSubscribe success-------------
+diskmanager.c:[main][4379]:Diskformat:MCSP_LOG_INIT success. iCount=[0]
+
+diskmanager.c:[main][4386]:Diskformat:MCSP_LOG_INIT end. iCount=[0]
+
+Get version info<Diskformat:V2.1 2012-3-22>
+MscReadPluginConfig,96, plugin_content_len = 351 
+MscReadPluginConfig, 120, buffer = <?xml version="1.0" encoding="utf-8"?><pluginlist><plugin capacity="av"><name>IPTV</name><protocol>dlna</protocol><type>iptv</type><lib>/mnt/data/qcs/iptv/libmsciptvplugin.so</lib></plugin><plugin capacity="image"><name>LocalPlayer</name><protocol>dlna</protocol><type>localplay</type><lib>/mnt/app/lib/lib_PlayerPlugin.so</lib></plugin></pluginlist>
+
+MscReadPluginConfig, 144, curNode->name = plugin
+MscReadPluginConfig, 148, pCapacity = av
+MscReadPluginConfig,164,szPluginName= IPTV
+MscReadPluginConfig,175,szSupportProtocol= dlna
+MscReadPluginConfig,188,szOperationType= iptv
+MscReadPluginConfig,201,szLibPath= /mnt/data/qcs/iptv/libmsciptvplugin.so
+MscReadPluginConfig,213,s_pluginNumber= 1
+MscReadPluginConfig, 144, curNode->name = plugin
+MscReadPluginConfig, 148, pCapacity = image
+MscReadPluginConfig,164,szPluginName= LocalPlayer
+MscReadPluginConfig,175,szSupportProtocol= dlna
+MscReadPluginConfig,188,szOperationType= localplay
+MscReadPluginConfig,201,szLibPath= /mnt/app/lib/lib_PlayerPlugin.so
+MscReadPluginConfig,213,s_pluginNumber= 2
+MscReadPluginConfig, 222, end of read config 
+MSC_Plugin_Init,780,  MSC_Plugin_Init start --
+Msc_GetPluginFuncionFp,84,pluginNumbe= 2
+Msc_GetPluginFuncionFp,93,g_PluginCfg[i].libPath=/mnt/data/qcs/iptv/libmsciptvplugin.so
+
+###############################################################
+#                      auto test IS RUNING                    #
+#                        Date 2012.10.21                      #
+###############################################################
+cfgexport-info: signalInit for mcsp_cfgexport, PID=1454!
+start to init MCSP LOGCAT!!MCSP_getsystime: CLKS_PER_SEC=100!
+StbCfgAgent:[406] StateRulesDescriptions, pcName=ExtRulesDescriptions ptUserData->state=2
+StbCfgAgent:[406] StateRulesDescriptions, pcName=rulefile ptUserData->state=10
+StbCfgAgent:[406] StateRulesDescriptions, pcName=rulefilepath ptUserData->state=7
+StbCfgAgent:[406] StateRulesDescriptions, pcName=cfginfopath ptUserData->state=7
+StbCfgAgent:[591] InitXmlFile /mnt/app/bin,MCSP_CfgManager,ProductCfgRules.xml
+StbCfgAgent:[591] InitXmlFile /mnt/data/qcs/cfg,MCSP_CfgManager,VasCfgRules.xml
+cfgexport: output file is: /etc/stbconfig.ini
+=====cfgexport-info: cfgms is alive, transport online=====
+Msc_GetPluginFuncionFp,111, funcname = IPTV_PluginInit
+Msc_GetPluginFuncionFp,93,g_PluginCfg[i].libPath=/mnt/app/lib/lib_PlayerPlugin.so
+cfgexport-info: signalInit for mcsp_cfgexport, PID=1456!
+StbCfgAgent:[605] InitXmlFile ok, iAllRuleDespFileCount=2
+initialize product library
+Msc_GetPluginFuncionFp,111, funcname = LocalPlayer_PluginInit
+Msc_GetPluginFuncionFp,189,--End of Msc_GetPluginFuncionFp--
+cfgexport-info: ========export config success!========
+
+cfgexport: 0--error: MCSP_SrvEvt_Init() returned -1
+cfgexport: 0--error: PingCfg() returned -11
+cfgexport: output file is: /var/cfgtmp
+=====cfgexport-info: cfgms is not alive, transport offline=====
+------------------config mtd=3---------------------,247
+-----MTD_DEVICE_NAME=/dev/mtd3-----326
+-----m_tState.iFd=12-----335
+[CPE_Init][1481]operator market is [31]
+cfgexport-info: ========export config success!========
+
+Msc_PluginServiceInit, 221, ------- ptPluginFuncFp[0].pfPluginInit  success !----
+Msc_PluginServiceInit, 239, ------- tPluginFuncFp[0].pfRegisterAsynRspCallback  success !----
+Msc_PluginServiceInit, 257, ------- tPluginFuncFp[0].pfRegisterNotifyCallback  success !----
+LocalPlayer_PluginInit,92, MCSP_SrvEvt_Init success...
+LocalPlayer_PluginInit,104, MCSP_EVTSubscribe success...
+[Timer_Init][53]Timer_Init...
+Msc_PluginServiceInit, 221, ------- ptPluginFuncFp[1].pfPluginInit  success !----
+Msc_PluginServiceInit, 239, ------- tPluginFuncFp[1].pfRegisterAsynRspCallback  success !----
+Msc_PluginServiceInit, 257, ------- tPluginFuncFp[1].pfRegisterNotifyCallback  success !----
+Msc_PluginServiceInit,266,--End of Msc_PluginServiceInit--
+MCSP_getsystime: CLKS_PER_SEC=100!
+ Starting stvmsclient... 
+/mnt/app/bin/localplaymana APPPID= APPSTAT=
+ Starting localplaymana... 
+/mnt/data/logout is not exist!!!
+MCSP_getsystime: CLKS_PER_SEC=100!
+11
+MCSP_SrvEvt_Init success
+/mnt/app/bin/localplaymana Sending Start Evt now
+/mnt/app/bin/localplaymana Sending Start Evt done
+MCSP_EVTSubscribe success
+ReInitMcspLog INITNUM:1
+ReInitMcspLog INITOK
+InitMsgMutex: g_iPicViewMsgMutex = MCSP_InitializeSemaphore OK!--------
+InitMsgMutex: g_iFMMsgMutex = MCSP_InitializeSemaphore OK!--------
+InitMsgMutex: g_iConfigMsgMutex = MCSP_InitializeSemaphore OK!--------
+InitMsgMutex: g_iDlnaMsgMutex = MCSP_InitializeSemaphore OK!--------
+[CFG_InitHDConf]iRet=-1 g_hdconf.AudOutput=0
+[CFG_InitHDConf]iRet=-1 g_hdconf.MusicBackGroundPic=
+[CFG_InitHDConf]iRet=-1 g_hdconf.PicBackGroundMusic=
+[CFG_InitHDConf]iRet=-1 g_hdconf.MenuLang=0
+[CFG_InitHDConf]iRet=0 g_hdconf.MenuStyle=0
+[CFG_InitHDConf]iRet=0 g_hdconf.MenuBGMusicOff=0
+[CreateSoftLinkImage] cskin:1!!!
+/mnt/app/bin/exsubtitle APPPID= APPSTAT=
+ Starting exsubtitle... 
+[CreateSoftLinkImage] cmd:ln -s /mnt/app/zhineng_ui/images/skin1 /skin/images
+[CFG_InitHDConf]iRet=0 g_hdconf.MenuSkin=1
+[CFG_InitHDConf]iRet=-1 g_hdconf.VideoPlayMode=0
+[CFG_InitHDConf]iRet=0 g_hdconf.MusicPlayMode=0
+RegistPicViewSocket start
+[PicView_INIT]iRet=-1 s_picinfo.iDisPlayMode=3
+[PicView_INIT]iRet=-1 s_picinfo.iDispInterval=3000
+[PicView_INIT]iRet=-1 s_picinfo.iEffect=6
+market[31]
+MCSP_CfgDisp_RegCallback Reg ok cnt:23 i:64
+MCSP_CfgDisp_RegCallback Reg ok cnt:9 i:64
+[GetHandle]content {'cmd':'query_browser_window','name':'main_window'}!
+GetHandle return [233624]RegPLMObjName content[{'cmd':'regCom','comName':'LocalPlayClient','interface':'ztebw_device_config_read','name':'localplayer_version','msgType':12697604,'cmdType':12697636}]RegPLMObjName content[{'cmd':'regCom','comName':'LocalPlayClient','interface':'ztebw_device_customsize_write','name':'PIC_SetImages','msgType':12697604,'cmdType':12697615}]RegPLMObjName content[{'cmd':'regCom','comName':'LocalPlayClient','interface':'ztebw_device_config_read2','name':'FM_GetItemInfo','msgType':12697605,'cmdType':12697628}]RegPLMObjName content[{'cmd':'regCom','comName':'LocalPlayClient','interface':'ztebw_device_config_read2','name':'FM_GetItems','msgType':12697605,'cmdType':12697623}]RegPLMService: succ!
+/mnt/app/bin/localplaymana Sending Start Evt now
+/mnt/app/bin/localplaymana Sending Start Evt done
+MCSP_getsystime: CLKS_PER_SEC=100!
+ | 
+start srvbase process
+kernel/qcoreapplication.cpp QCoreApplicationPrivate 331
+kernel/qcoreapplication.cpp QCoreApplicationPrivate 346
+kernel/qapplication.cpp QApplicationPrivate 175
+kernel/qapplication.cpp QApplicationPrivate 210
+kernel/qcoreapplication.cpp QCoreApplication 540
+kernel/qcoreapplication.cpp init 603
+kernel/qcoreapplication.cpp init 630
+kernel/qcoreapplication.cpp init 672
+kernel/qcoreapplication.cpp init 676
+kernel/qcoreapplication.cpp QCoreApplication 545
+kernel/qapplication.cpp construct 811
+kernel/qapplication.cpp construct 814
+kernel/qapplication.cpp construct 833
+QObject::connect: Cannot connect (null)::windowEvent(QWSWindow*,QWSServer::WindowEvent) to QDirectFBScreenPrivate::onWindowEvent(QWSWindow*,QWSServer::WindowEvent)
+QObject::connect: Cannot connect (null)::windowEvent(QWSWindow*,QWSWindow*,QWSServer::WindowEvent) to QDirectFBScreenPrivate::onWindowEventForZorder(QWSWindow*,QWSWindow*,QWSServer::WindowEvent)
+qdirectfbscreen.cpp connect 1126
+qdirectfbscreen.cpp connect 1138
+===========DirectFBInit=========
+DirectFB:fopen(/var/directfbrc) is not null. 
+[dfb_config_init] SYSCONFDIR is /etc 
+(*) DirectFB/Config Set no-layer2-support
+(*) DirectFB/Config Set no-dynamic-insert-fusion-ko
+qdirectfbscreen.cpp connect 1148
+
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~| DirectFB 1.2.7 |~~~~~~~~~~~~~~~~~~~~~~~~~~
+        (c) 2001-2008  The world wide DirectFB Open Source Community
+        (c) 2000-2004  Convergence (integrated media) GmbH
+      ----------------------------------------------------------------
+
+(*) DirectFB/Core: Multi Application Core. (2015-10-27 11:33) 
+(*) Fusion/SHM: Using MADV_REMOVE (2.6.35.0 >= 2.6.19.2)
+(*) Direct/Thread: Started 'Fusion Dispatch' (1564) [MESSAGING FIFO/FIFO 44/44] <8388608>...
+(*) MediaTek/System: system_join: #464
+[5J] system_join -> map memory pool
+[5J] system_join -> map cmdbuf
+mt85AdapterCmdBufGetCmdBuf: u4CmdbufLen = 0xB000
+[5J] system_join -> map debug info
+(*) DirectFB/Graphics: MediaTek 85xx 1.2 (MediaTek)
+qdirectfbscreen.cpp connect 1439
+kernel/qapplication.cpp construct 842
+kernel/qapplication.cpp construct 879
+rm: can't remove '/var/fdisklist': No such file or directory
