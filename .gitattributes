@@ -1,0 +1,6 @@
+dump/mtd* binary
+*.img binary
+*.7z.* binary
+*.bin binary
+*.zip binary
+
