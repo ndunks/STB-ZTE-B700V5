@@ -83,6 +83,20 @@ Device 0: nand0, sector size 128 KiB
 # cat /proc/cmdline
 console=ttyMT0 kgdboc=ttyMT0 root=/dev/mtdblock9 rootfstype=jffs2 rw init=/init mem=512M mt85xx_reserve=495M,17M drvmem=14
 
+# cat /proc/cpuinfo 
+Processor       : ARMv6-compatible processor rev 7 (v6l)
+BogoMIPS        : 804.86
+Features        : swp half thumb fastmult vfp edsp java 
+CPU implementer : 0x41
+CPU architecture: 7
+CPU variant     : 0x0
+CPU part        : 0xb76
+CPU revision    : 7
+
+Hardware        : mt85xx
+Revision        : 0000
+Serial          : 0000000000000000
+
 # cat /proc/mtd 
 dev:    size   erasesize  name
 mtd0: 10000000 00020000 "NAND 256MiB 3,3V 8-bit"
