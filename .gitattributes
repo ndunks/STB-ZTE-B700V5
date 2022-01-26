@@ -3,4 +3,4 @@ dump/mtd* binary
 *.7z.* binary
 *.bin binary
 *.zip binary
-
+kernel/kernel binary
