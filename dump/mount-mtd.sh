@@ -8,6 +8,7 @@ set -e
 
 ## Method 2
 LOOP_DEVICE=`losetup --show -f mtdblock0`
+modprobe mtdblock
 modprobe block2mtd block2mtd=$LOOP_DEVICE,128ki
 ## Add partition
 OFFSET=0
