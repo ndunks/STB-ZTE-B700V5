@@ -5,6 +5,19 @@
 
 - 8N1 no hw flow control
 
+## Run without ZTE Apps
+
+When booting, press any key to enter U-Boot CMD, then set env runlevel to 4.
+
+``` bash
+# U-Boot CMD
+setenv runlevel 4
+savenv
+# boot to system
+bootsys
+```
+
+Note: env are permanently stored on Nand, so your STB will remain boot to minimal mode.
 
 ## U-Boot info
 Press enter while boot to go into U-boot command
