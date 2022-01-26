@@ -17,7 +17,28 @@ savenv
 bootsys
 ```
 
-Note: env are permanently stored on Nand, so your STB will remain boot to minimal mode.
+    Note: env are permanently stored on Nand, so your STB will remain boot to minimal mode.
+
+### Setup System
+
+``` bash
+# Disable static IP
+sed -i 's/^ifconfig eth0/#&/' /etc/rc.d/init_net
+
+# enable dhcp client on eth0
+echo 'export PATH=$PATH:/mnt/app/bin' >> /etc/rc.d/init_net
+echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib:/mnt/app/lib' >> /etc/rc.d/init_net
+echo 'ifconfig eth0 up && dhcpcd eth0 &> /dev/console &' >> /etc/rc.d/init_net
+# name server
+echo 'nameserver 8.8.8.8' > /etc/resolv.conf
+
+sed -i 's/^sh \/etc\/rc.d\/run_bdpprog.sh/#&/' /etc/rc.d/rcS0
+# enable telnet
+sed -i '/^#\/usr\/sbin\/telnetd -l/s/^#//' /etc/rc.d/rcS0
+# enable ssh
+sed -i '/^#\/mnt\/app\/bin\/dropbear/s/^#//' /etc/rc.d/rcS0
+
+```
 
 ## U-Boot info
 Press enter while boot to go into U-boot command
