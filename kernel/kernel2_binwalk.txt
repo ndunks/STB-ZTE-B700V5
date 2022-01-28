@@ -1,0 +1,7 @@
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+96            0x60            uImage header, header size: 64 bytes, header CRC: 0xE109F57E, created: 2015-01-19 10:03:38, image size: 2348816 bytes, Data Address: 0x3A00000, Entry Point: 0x3A00000, data CRC: 0x13F9FAF, OS: Linux, CPU: ARM, image type: OS Kernel Image, compression type: none, image name: ""
+160           0xA0            Linux kernel ARM boot executable zImage (little-endian)
+17533         0x447D          gzip compressed data, maximum compression, from Unix, last modified: 2015-01-19 10:03:29
+
