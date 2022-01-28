@@ -1,0 +1,19 @@
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Mediatek bootloader
+64            0x40            Mediatek bootloader
+128           0x80            Mediatek bootloader
+192           0xC0            Mediatek bootloader
+256           0x100           Mediatek bootloader
+320           0x140           Mediatek bootloader
+384           0x180           Mediatek bootloader
+448           0x1C0           Mediatek bootloader
+72228         0x11A24         Mediatek bootloader
+143108        0x22F04         Mediatek bootloader
+154528        0x25BA0         Boot section Start 0x5E5E5E5E End 0x20620
+498553        0x79B79         Certificate in DER format (x509 v3), header length: 4, sequence length: 1284
+498669        0x79BED         Certificate in DER format (x509 v3), header length: 4, sequence length: 1288
+503716        0x7AFA4         CRC32 polynomial table, little endian
+515648        0x7DE40         CRC32 polynomial table, little endian
+
