@@ -2,7 +2,7 @@
 # nodemon -I -w qemulate.sh --delay 0.3 -x "./qemulate.sh || false"
 # Not working
 qemu-system-arm -m 256M -M versatilepb -cpu arm1176 \
-    -hda dump/mtdblock0 \
+    -kernel qemu/u-boot-nodtb.bin \
     -nographic
 # -serial stdio
     
